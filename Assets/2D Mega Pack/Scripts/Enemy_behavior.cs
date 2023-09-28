@@ -78,7 +78,7 @@ public class Enemy_behavior : MonoBehaviour
     void EnemyLogic()
     {
         distance = Vector2.Distance(transform.position, target.transform.position);
-        Debug.Log($"enenmy logic distance:{distance}");
+        // Debug.Log($"enenmy logic distance:{distance}");
         if (distance > closeCombatDistance)
         {
             Move();
@@ -114,6 +114,7 @@ public class Enemy_behavior : MonoBehaviour
             Vector2 targetPosition = new Vector2(target.transform.position.x, transform.position.y);
 
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+            
         }
     }
 
