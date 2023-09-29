@@ -38,7 +38,7 @@ public class PlayerCombat : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Enemy component not found on " + enemy.name);
+            Debug.Log("Enemy component not found on " + enemy.name);
         }
     }
     }

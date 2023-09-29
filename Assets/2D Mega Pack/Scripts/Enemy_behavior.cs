@@ -13,7 +13,7 @@ public class Enemy_behavior : MonoBehaviour
     public float timer; //Timer for cooldown between attacks 
     public float closeCombatDistance; // Minimum distance for close combat attack
     public float rangedAttackDistance; // Minimum distance for ranged attack
-    public int closeCombatDamage = 35; // Adjust the value as needed
+    public int closeCombatDamage = 25; // Adjust the value as needed
     public LayerMask playerLayerMask;
      // Add references to your close and ranged attack prefabs or other assets
     // public GameObject closeCombatAttackPrefab; Not needed not using a prefab for the attack
@@ -78,7 +78,7 @@ public class Enemy_behavior : MonoBehaviour
     void EnemyLogic()
     {
         distance = Vector2.Distance(transform.position, target.transform.position);
-        // Debug.Log($"enenmy logic distance:{distance}");
+        // Debug.Log($"enemy logic distance:{distance}");
         if (distance > closeCombatDistance)
         {
             Move();
@@ -109,7 +109,7 @@ public class Enemy_behavior : MonoBehaviour
     void Move()
     {
         anim.SetBool("canWalk", true);
-        if(!anim.GetCurrentAnimatorStateInfo(0).IsName("CopyX_RushAttack"))
+        if(!anim.GetCurrentAnimatorStateInfo(0).IsName("CopyX_RushAttack") && !anim.GetCurrentAnimatorStateInfo(0).IsName("CopyX_RangedAttack"))
         {
             Vector2 targetPosition = new Vector2(target.transform.position.x, transform.position.y);
 
@@ -155,7 +155,7 @@ public class Enemy_behavior : MonoBehaviour
 
         // Check if the target (player) is within the attack range
         // Loop through the hitColliders and apply damage to the player if detected
-        foreach (Collider2D collider in hitColliders)
+        /*foreach (Collider2D collider in hitColliders)
         {
             if (collider.CompareTag("Player"))
             {
@@ -168,7 +168,7 @@ public class Enemy_behavior : MonoBehaviour
                     Debug.Log($"Player Hit for {closeCombatDamage}");
                 }
             }
-        }
+        } */
     }
     
     canAttackCloseCombat = false; // Set to false to prevent continuous attacks
