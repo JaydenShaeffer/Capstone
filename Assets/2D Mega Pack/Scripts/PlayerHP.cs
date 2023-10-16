@@ -73,4 +73,17 @@ public class PlayerHP : MonoBehaviour
             TakeDamage(closeCombatDamage);
         }
     }
+
+    public void Heal(int amount)
+    {
+        currentHealth += amount;
+
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+
+        healthBar.SetHealth(currentHealth);
+    }
+
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Enemy_behavior : MonoBehaviour
 {
     #region Public Variables
@@ -10,7 +11,7 @@ public class Enemy_behavior : MonoBehaviour
     public float rayCastLength;
     public float attackDistance; //Minimum distance for attack
     public float moveSpeed;
-    public float timer; //Timer for cooldown between attacks 
+    public float timer; //Timer for cooldown between attacks
     public float closeCombatDistance; // Minimum distance for close combat attack
     public float rangedAttackDistance; // Minimum distance for ranged attack
     public int closeCombatDamage = 25; // Adjust the value as needed
@@ -20,6 +21,7 @@ public class Enemy_behavior : MonoBehaviour
     public GameObject rangedAttackPrefab;
     //public Transform attackPoint;
     #endregion
+
 
     #region Private Variables
     private RaycastHit2D hit;
@@ -34,9 +36,10 @@ public class Enemy_behavior : MonoBehaviour
     private bool canAttackRanged = true;
     #endregion
 
+
     void Awake()
     {
-        intTimer = timer; //Store the inital value of timer 
+        intTimer = timer; //Store the inital value of timer
         anim = GetComponent<Animator>();
         playerLayerMask = LayerMask.GetMask("Player");
     }
@@ -49,7 +52,8 @@ public class Enemy_behavior : MonoBehaviour
             RaycastDebugger();
         }
 
-        //When Player is detected 
+
+        //When Player is detected
         if(hit.collider != null)
         {
             EnemyLogic();
@@ -59,12 +63,14 @@ public class Enemy_behavior : MonoBehaviour
             inRange = false;
         }
 
+
         if(inRange == false)
         {
             anim.SetBool("canWalk", false);
             StopAttack();
         }
     }
+
 
     void OnTriggerEnter2D(Collider2D trig)
     {
@@ -74,6 +80,7 @@ public class Enemy_behavior : MonoBehaviour
             inRange = true;
         }
     }
+
 
     void EnemyLogic()
     {
@@ -99,12 +106,14 @@ public class Enemy_behavior : MonoBehaviour
             }
         }
 
+
         if (cooling)
         {
             Cooldown();
             anim.SetBool("Attack", false);
         }
     }
+
 
     void Move()
     {
@@ -113,45 +122,55 @@ public class Enemy_behavior : MonoBehaviour
         {
             Vector2 targetPosition = new Vector2(target.transform.position.x, transform.position.y);
 
+
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
-            
+           
         }
     }
+
 
     void Attack()
     {
         timer = intTimer; //Reset Timer when Player enter Attack Range
         attackMode = true; //To check if Enemy can still attack or not
 
+
         anim.SetBool("canWalk", false);
         anim.SetBool("Attack", true);
     }
+
 
     void AttackCloseCombat()
 {
     timer = intTimer; // Reset Timer when Player enters Attack Range
     attackMode = true; // To check if the Enemy can still attack or not
 
+
     anim.SetBool("canWalk", false);
     anim.SetBool("Attack", true);
     anim.SetBool("IsCloseCombat", true);
     anim.SetBool("IsRangedAttack", false);
 
+
     // Get the hitbox collider component of the child GameObject (hitbox)
     Collider2D[] hitboxColliders = GetComponentsInChildren<Collider2D>();
+
 
     // Create a ContactFilter2D to filter collisions with the player's layer
     ContactFilter2D contactFilter = new ContactFilter2D();
     contactFilter.SetLayerMask(playerLayerMask);
 
+
     // List to store collision results
     List<Collider2D> hitColliders = new List<Collider2D>();
+
 
     // Loop through each hitbox collider
     foreach (Collider2D hitboxCollider in hitboxColliders)
     {
         // Detect collisions using OverlapCollider and the ContactFilter2D
         hitboxCollider.OverlapCollider(contactFilter, hitColliders);
+
 
         // Check if the target (player) is within the attack range
         // Loop through the hitColliders and apply damage to the player if detected
@@ -170,9 +189,11 @@ public class Enemy_behavior : MonoBehaviour
             }
         } */
     }
-    
+   
     canAttackCloseCombat = false; // Set to false to prevent continuous attacks
 }
+
+
 
 
      void AttackRanged()
@@ -180,26 +201,32 @@ public class Enemy_behavior : MonoBehaviour
         timer = intTimer; // Reset Timer when Player enters Attack Range
         attackMode = true; // To check if Enemy can still attack or not
 
+
         anim.SetBool("canWalk", false);
         anim.SetBool("Attack", true);
         anim.SetBool("IsRangedAttack", true);
         anim.SetBool("IsCloseCombat", false);
 
+
         // Instantiate and configure your ranged attack prefab here
         // Example:
         // Instantiate(rangedAttackPrefab, attackPoint.position, Quaternion.identity);
 
+
         canAttackRanged = false; // Set to false to prevent continuous attacks
     }
+
 
     void Cooldown()
     {
         timer -= Time.deltaTime;
 
+
         if (timer <= 0 && cooling && attackMode)
         {
             cooling = false;
             timer = intTimer;
+
 
             // Reset attack flags to allow attacks again
             canAttackCloseCombat = true;
@@ -213,12 +240,14 @@ public class Enemy_behavior : MonoBehaviour
     // Additional logic if needed
     }
 
+
     void StopAttack()
     {
         cooling = false;
         attackMode = false;
         anim.SetBool("Attack", false);
     }
+
 
     void RaycastDebugger()
     {
@@ -231,6 +260,7 @@ public class Enemy_behavior : MonoBehaviour
              Debug.DrawRay(rayCast.position, Vector2.left * rayCastLength, Color.green);
         }
     }
+
 
     public void TriggerCooling()
     {
