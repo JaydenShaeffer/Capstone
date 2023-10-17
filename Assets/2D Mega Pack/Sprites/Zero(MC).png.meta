@@ -842,7 +842,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Custom Edited - Mega Man ZeroZX Customs - Zero_37
+      name: RangedAttack3
       rect:
         serializedVersion: 2
         x: 1313
@@ -863,7 +863,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Custom Edited - Mega Man ZeroZX Customs - Zero_38
+      name: RangedAttack4
       rect:
         serializedVersion: 2
         x: 1374
@@ -884,28 +884,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Custom Edited - Mega Man ZeroZX Customs - Zero_39
-      rect:
-        serializedVersion: 2
-        x: 1432
-        y: 1146
-        width: 35
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d65a8215ebb3204abff18c81d677d08
-      internalID: -1926639509
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Custom Edited - Mega Man ZeroZX Customs - Zero_40
+      name: RangedAttack6
       rect:
         serializedVersion: 2
         x: 1470
@@ -1094,7 +1073,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Custom Edited - Mega Man ZeroZX Customs - Zero_49
+      name: RangedAttack1
       rect:
         serializedVersion: 2
         x: 1237
@@ -1115,7 +1094,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Custom Edited - Mega Man ZeroZX Customs - Zero_50
+      name: RangedAttack2
       rect:
         serializedVersion: 2
         x: 1272
@@ -1136,7 +1115,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Custom Edited - Mega Man ZeroZX Customs - Zero_51
+      name: Projectile
       rect:
         serializedVersion: 2
         x: 1349
@@ -1157,7 +1136,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Custom Edited - Mega Man ZeroZX Customs - Zero_52
+      name: RangedAttack7
       rect:
         serializedVersion: 2
         x: 1500
@@ -13189,6 +13168,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: RangedAttack5
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 1146
+        width: 28
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c7adfbfcc2d3b4797cbc065ce00cbc
+      internalID: -1576708601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -13449,12 +13449,10 @@ TextureImporter:
       Custom Edited - Mega Man ZeroZX Customs - Zero_367: -1298826134
       Custom Edited - Mega Man ZeroZX Customs - Zero_368: 2117770948
       Custom Edited - Mega Man ZeroZX Customs - Zero_369: 1089011105
-      Custom Edited - Mega Man ZeroZX Customs - Zero_37: 1698372919
       Custom Edited - Mega Man ZeroZX Customs - Zero_370: -1491881980
       Custom Edited - Mega Man ZeroZX Customs - Zero_371: -859292690
       Custom Edited - Mega Man ZeroZX Customs - Zero_372: 232386146
       Custom Edited - Mega Man ZeroZX Customs - Zero_373: -331341166
-      Custom Edited - Mega Man ZeroZX Customs - Zero_38: -1903556457
       Custom Edited - Mega Man ZeroZX Customs - Zero_382: -165981423
       Custom Edited - Mega Man ZeroZX Customs - Zero_383: -1691081806
       Custom Edited - Mega Man ZeroZX Customs - Zero_384: 1114746134
@@ -13468,7 +13466,6 @@ TextureImporter:
       Custom Edited - Mega Man ZeroZX Customs - Zero_391: -1368216805
       Custom Edited - Mega Man ZeroZX Customs - Zero_392: -1255108949
       Custom Edited - Mega Man ZeroZX Customs - Zero_393: -1475746496
-      Custom Edited - Mega Man ZeroZX Customs - Zero_40: -270700571
       Custom Edited - Mega Man ZeroZX Customs - Zero_404: -2023014913
       Custom Edited - Mega Man ZeroZX Customs - Zero_405: -615413756
       Custom Edited - Mega Man ZeroZX Customs - Zero_406: -737822524
@@ -13555,7 +13552,6 @@ TextureImporter:
       Custom Edited - Mega Man ZeroZX Customs - Zero_487: 976716493
       Custom Edited - Mega Man ZeroZX Customs - Zero_488: -1966141608
       Custom Edited - Mega Man ZeroZX Customs - Zero_489: -1271423020
-      Custom Edited - Mega Man ZeroZX Customs - Zero_49: -1480042451
       Custom Edited - Mega Man ZeroZX Customs - Zero_490: -1122410440
       Custom Edited - Mega Man ZeroZX Customs - Zero_491: 734688714
       Custom Edited - Mega Man ZeroZX Customs - Zero_492: -1898727240
@@ -13566,7 +13562,6 @@ TextureImporter:
       Custom Edited - Mega Man ZeroZX Customs - Zero_497: -938955248
       Custom Edited - Mega Man ZeroZX Customs - Zero_498: 944558732
       Custom Edited - Mega Man ZeroZX Customs - Zero_499: 10616673
-      Custom Edited - Mega Man ZeroZX Customs - Zero_50: -603626182
       Custom Edited - Mega Man ZeroZX Customs - Zero_500: -852976479
       Custom Edited - Mega Man ZeroZX Customs - Zero_501: 1788040816
       Custom Edited - Mega Man ZeroZX Customs - Zero_502: -760935296
@@ -13577,7 +13572,6 @@ TextureImporter:
       Custom Edited - Mega Man ZeroZX Customs - Zero_507: -1808847959
       Custom Edited - Mega Man ZeroZX Customs - Zero_508: -555259120
       Custom Edited - Mega Man ZeroZX Customs - Zero_509: 2134342937
-      Custom Edited - Mega Man ZeroZX Customs - Zero_51: -1883700441
       Custom Edited - Mega Man ZeroZX Customs - Zero_510: 2137049397
       Custom Edited - Mega Man ZeroZX Customs - Zero_511: -1722841492
       Custom Edited - Mega Man ZeroZX Customs - Zero_512: 1609561949
@@ -13588,7 +13582,6 @@ TextureImporter:
       Custom Edited - Mega Man ZeroZX Customs - Zero_517: -1438014527
       Custom Edited - Mega Man ZeroZX Customs - Zero_518: -803705633
       Custom Edited - Mega Man ZeroZX Customs - Zero_519: 1019568476
-      Custom Edited - Mega Man ZeroZX Customs - Zero_52: -1921064838
       Custom Edited - Mega Man ZeroZX Customs - Zero_520: 1628996135
       Custom Edited - Mega Man ZeroZX Customs - Zero_521: -1979310725
       Custom Edited - Mega Man ZeroZX Customs - Zero_522: -1168083051
@@ -13912,6 +13905,14 @@ TextureImporter:
       NextLevelTeleport7: -139980113
       NextLevelTeleport8: -843076955
       NextLevelTeleport9: 559007938
+      Projectile: -1883700441
+      RangedAttack1: -1480042451
+      RangedAttack2: -603626182
+      RangedAttack3: 1698372919
+      RangedAttack4: -1903556457
+      RangedAttack5: -1576708601
+      RangedAttack6: -270700571
+      RangedAttack7: -1921064838
       Run1: 1051236673
       Run2: 1749282758
       Run3: -1528956348

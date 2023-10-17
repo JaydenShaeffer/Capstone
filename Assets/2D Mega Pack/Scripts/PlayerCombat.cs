@@ -7,6 +7,7 @@ public class PlayerCombat : MonoBehaviour
 
     public Animator animator;
     
+    public ProjectileSpawner projectileSpawner;
 
     public Transform attackPoint;
     public float attackRange = 0.5f;
@@ -20,6 +21,11 @@ public class PlayerCombat : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.G))
         {
             Attack();
+        }
+
+         if (Input.GetKeyDown(KeyCode.H))
+        {
+            OnRangedAttack();
         }
     }
 
@@ -43,6 +49,10 @@ public class PlayerCombat : MonoBehaviour
     }
     }
 
+    public void OnRangedAttack()
+    {
+        animator.SetTrigger("rangedAttack");
+    }
 
 
     void OnDrawGizmosSelected()
