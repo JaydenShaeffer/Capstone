@@ -13,10 +13,6 @@ public class ProjectileSpawner : MonoBehaviour
         Vector3 origScale = projectile.transform.localScale;
 
         // Flip the projectile's facing direction and movement based on the direction the character is facing at time of launch
-        projectile.transform.localScale = new Vector3(
-            origScale.x * transform.localScale.x > 0 ? 1 : -1,
-            origScale.y,
-            origScale.z
-            );
+        projectile.transform.localScale = new Vector3( origScale.x * transform.localScale.x > 0 ? 1 : -1, origScale.y, origScale.z);
     }
 }

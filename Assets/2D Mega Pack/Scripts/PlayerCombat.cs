@@ -12,9 +12,14 @@ public class PlayerCombat : MonoBehaviour
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
-
+    public AudioSource audioSource;
+    public AudioClip audioClip;  
     public int attackDamage = 40;
 
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>(); 
+    }
     // Update is called once per frame
     void Update()
     {
@@ -52,6 +57,8 @@ public class PlayerCombat : MonoBehaviour
     public void OnRangedAttack()
     {
         animator.SetTrigger("rangedAttack");
+        audioSource.clip = audioClip;
+        audioSource.Play();
     }
 
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,65 +9,81 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer sprite;
     private Animator anim;
 
-    private float dirX = 0f;
-    [SerializeField] private float moveSpeed = 7f;
-    [SerializeField] private float jumpForce = 10f;
+
+    // ----- NEW STUFF TESTING ------ //
+    public float runspeed = 7f;
+    Vector2 moveInput;
+    public bool _IsFacingRight = true;
+    public float jumpForce = 10f;
+
+    public bool IsFacingRight { get { return _IsFacingRight; } private set {
+            if(_IsFacingRight != value)
+            {
+                //flip the local scale to make the player face the opposite direction
+                transform.localScale *= new Vector2(-1, 1);
+            }
+            
+            _IsFacingRight = value;
+
+
+    } }
+    [SerializeField]
+    private bool _isJumping = false;
+    [SerializeField]
+    private bool _isMoving = false;
+
+    public bool IsMoving { get
+        {
+            return _isMoving;
+        }
+    private set
+        {
+            _isMoving = value;
+            anim.SetBool("isMoving", value);
+        }
+    }
+
+    public bool IsJumping { get
+        {
+            return _isJumping;
+        }
+    private set
+        {
+            _isJumping = value;
+            anim.SetBool("isJumping", value);
+        }
+    }
+    // ----- NEW STUFF TESTING ------ // 
+
+    private void Awake ()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+   
+   
 
     private bool isJumping = false;
-    private bool hasSpawned = false; // Add a flag to track if the spawn animation has played
+    //private bool hasSpawned = false; // Add a flag to track if the spawn animation has played
 
-     // idle = 0 run = 1 jumping = 2 start = 3
-    private enum MovementState { idle, run, jumping, start }
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
 
-        // Trigger the spawn animation when the game starts
-        anim.SetTrigger("Start"); // "Spawn" is the trigger parameter name you'll set in the Animator window.
     }
 
     private void Update()
     {
-        dirX = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
-
         if (Input.GetButtonDown("Jump") && !isJumping)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             isJumping = true;
+            IsJumping = true; // Set the IsJumping property to trigger the jump animation
         }
 
-        UpdateAnimationUpdate();
-    }
-
-    private void UpdateAnimationUpdate()
-    {
-        MovementState state;
-
-        if (dirX > 0f)
-        {
-            state = MovementState.run;
-            sprite.flipX = false;
-        }
-        else if (dirX < 0f)
-        {
-            state = MovementState.run;
-            sprite.flipX = true;
-        }
-        else
-        {
-            state = MovementState.idle;
-        }
-
-        if (isJumping)
-        {
-            state = MovementState.jumping;
-        }
-
-        anim.SetInteger("State", (int)state);
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -74,6 +91,37 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isJumping = false;
+            IsJumping = false;
         }
     }
+
+    private void FixedUpdate()
+    {
+        rb.velocity = new Vector2(moveInput.x * runspeed, rb.velocity.y);
+    }
+
+    public void OnMove(InputAction.CallbackContext context)
+    {
+        moveInput = context.ReadValue<Vector2>();
+
+        IsMoving = moveInput != Vector2.zero;
+
+        SetFacingDirection(moveInput);
+    }
+
+    private void SetFacingDirection(Vector2 moveInput)
+    {
+        if(moveInput.x > 0 && !IsFacingRight)
+        {
+            // face right
+            IsFacingRight = true;
+        }
+        else if (moveInput.x < 0 && IsFacingRight)
+        {
+            //face right
+            IsFacingRight = false;
+        }
+    }
+
+    
 }
