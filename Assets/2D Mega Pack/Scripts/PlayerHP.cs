@@ -62,17 +62,7 @@ public class PlayerHP : MonoBehaviour
 
 
    // Handle collisions with enemy attack colliders
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("EnemyAttack"))
-        {
-            // Get the damage value from the enemy's attack collider
-            int closeCombatDamage = other.GetComponentInChildren<BoxCollider2D>().GetComponent<EnemyAttack>().closeCombatDamage;
-
-            // Call the TakeDamage method to apply the damage
-            TakeDamage(closeCombatDamage);
-        }
-    }
+    
 
     public void Heal(int amount)
     {
