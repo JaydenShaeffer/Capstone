@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    public int closeCombatDamage = 25; // Adjust the value as needed
+    public int damage = 25; // Adjust the value as needed
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +17,7 @@ public class EnemyAttack : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log(other);
         if (other.CompareTag("Player"))
@@ -26,7 +26,7 @@ public class EnemyAttack : MonoBehaviour
             if (playerHealth != null)
             {
                 // Call the TakeDamage method to damage the player
-                playerHealth.TakeDamage(closeCombatDamage);
+                playerHealth.TakeDamage(damage);
             }
         }
     }

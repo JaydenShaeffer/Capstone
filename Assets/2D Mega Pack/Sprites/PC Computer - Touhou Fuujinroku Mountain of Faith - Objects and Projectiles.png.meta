@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a3dbbb6d86d0d1b41aea15cdf38f1aa7
+guid: 443391244be64e04690224da341f535b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -147,49 +147,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Game Boy Advance - Mega Man Zero 2 - Elpizo_0
-      rect:
-        serializedVersion: 2
-        x: 438
-        y: 3338
-        width: 67
-        height: 60
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9647013e6c4dd644b955534aa11dfa84
-      internalID: -1431992602
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Game Boy Advance - Mega Man Zero 2 - Elpizo_1
-      rect:
-        serializedVersion: 2
-        x: 309
-        y: 3254
-        width: 40
-        height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99b4e20e16801d541ac9c1a4c9a7cd60
-      internalID: -372725011
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -200,9 +158,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Game Boy Advance - Mega Man Zero 2 - Elpizo_0: -1431992602
-      Game Boy Advance - Mega Man Zero 2 - Elpizo_1: -372725011
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

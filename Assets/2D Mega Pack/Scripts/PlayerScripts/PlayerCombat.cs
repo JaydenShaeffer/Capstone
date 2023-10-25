@@ -22,30 +22,29 @@ public class PlayerCombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K))
-        { 
-            
-            //if (playerMovement.IsJumping == true /*&& !isAirAttacking*/)
-           // {
-          AirAttack();
-            //}
-            
-        }
-
         if (Input.GetKeyDown(KeyCode.G))
         {
-            GroundAttack();
+            
+            if (playerMovement.IsJumping == true && !isAirAttacking)
+            {
+                AirAttack();
+            }
+            else
+            {
+                GroundAttack();
+            }
+            
         }
 
          if (Input.GetKeyDown(KeyCode.H))
         {
             OnRangedAttack();
         }
+        
     }
-
+    
     void AirAttack()
     {
-        Debug.Log("K Key Pressed");
         animator.SetTrigger("AirAttack");
     }
 
