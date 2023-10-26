@@ -5,7 +5,7 @@ using TMPro;
 
 public class ItemCollector : MonoBehaviour
 {
-    private int score = 0;
+    [SerializeField] private int score = 0;
 
     [SerializeField] private TextMeshProUGUI scoreText;
 

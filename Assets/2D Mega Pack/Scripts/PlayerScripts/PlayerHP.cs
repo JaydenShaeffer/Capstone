@@ -9,7 +9,8 @@ public class PlayerHP : MonoBehaviour
     private Animator anim;
     public Enemy_behavior enemy_Behavior;
     public HealthBar healthBar;
-
+    [Header("Death Sound")]
+    [SerializeField] private AudioClip deathSound;
     // Start is called before the first frame update
     private void Start()
     {
@@ -25,6 +26,7 @@ public class PlayerHP : MonoBehaviour
         if(currentHealth <= 0)
         {
             Die();
+            SoundManager.instance.PlaySound(deathSound);
         }
     }
 
@@ -32,6 +34,7 @@ public class PlayerHP : MonoBehaviour
     {
         Debug.Log("You Died!");
         StartCoroutine(DieOng());
+        
         //anim.SetTrigger("death");
         //yield return new WaitForSeconds(1);
        // Destroy(gameObject);

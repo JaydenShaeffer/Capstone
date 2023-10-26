@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
     private Animator anim;
-
+    [SerializeField] private AudioClip jumpSound;
 
     // ----- NEW STUFF TESTING ------ //
     public float runspeed = 7f;
@@ -78,6 +78,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && !isJumping)
         {
+            SoundManager.instance.PlaySound(jumpSound);
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             isJumping = true;
             IsJumping = true; // Set the IsJumping property to trigger the jump animation

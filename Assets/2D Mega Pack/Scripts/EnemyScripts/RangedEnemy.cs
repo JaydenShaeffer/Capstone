@@ -21,6 +21,9 @@ public class RangedEnemy : MonoBehaviour
     [SerializeField] private LayerMask playerLayer;
     private float cooldownTimer = Mathf.Infinity;
 
+    [Header("Attack Sound")]
+    [SerializeField] private AudioClip attackSound;
+
     //References
     private Animator anim;
     private EnemyPatrol enemyPatrol;
@@ -42,6 +45,7 @@ public class RangedEnemy : MonoBehaviour
             {
                 cooldownTimer = 0;
                 anim.SetTrigger("rangedAttack");
+                SoundManager.instance.PlaySound(attackSound);
             }
         }
 

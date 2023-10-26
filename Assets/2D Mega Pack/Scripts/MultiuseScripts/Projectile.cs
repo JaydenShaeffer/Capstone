@@ -23,6 +23,9 @@ public class Projectile : MonoBehaviour
 
         // Set the velocity based on the direction and speed
         rb.velocity = direction.normalized * moveSpeed;
+
+        // Destroy the projectile after 3 seconds
+        Destroy(gameObject, 2.0f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
