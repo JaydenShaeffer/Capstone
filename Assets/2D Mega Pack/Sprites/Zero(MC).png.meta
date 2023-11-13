@@ -7016,28 +7016,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Custom Edited - Mega Man ZeroZX Customs - Zero_332
-      rect:
-        serializedVersion: 2
-        x: 802
-        y: 605
-        width: 11
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 573affeaf6bde09458c1dcf8e546a18a
-      internalID: 1656508921
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Custom Edited - Mega Man ZeroZX Customs - Zero_333
+      name: ong
       rect:
         serializedVersion: 2
         x: 810
@@ -7053,27 +7032,6 @@ TextureImporter:
       bones: []
       spriteID: 1b11c2fda8bade6469d7ed20cf4b8909
       internalID: -579396219
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Custom Edited - Mega Man ZeroZX Customs - Zero_334
-      rect:
-        serializedVersion: 2
-        x: 815
-        y: 604
-        width: 23
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 47dbdefa742684e4f95ff414386f59bc
-      internalID: -947784197
       vertices: []
       indices: 
       edges: []
@@ -7100,7 +7058,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Custom Edited - Mega Man ZeroZX Customs - Zero_336
+      name: fr
       rect:
         serializedVersion: 2
         x: 896
@@ -7116,27 +7074,6 @@ TextureImporter:
       bones: []
       spriteID: 54321a37f4040014aab48eeda93e12fb
       internalID: 1985142838
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Custom Edited - Mega Man ZeroZX Customs - Zero_337
-      rect:
-        serializedVersion: 2
-        x: 903
-        y: 615
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1b0564eb29797946b5f69353cef7c50
-      internalID: -362254412
       vertices: []
       indices: 
       edges: []
@@ -9158,7 +9095,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Custom Edited - Mega Man ZeroZX Customs - Zero_434
+      name: p
       rect:
         serializedVersion: 2
         x: 904
@@ -9174,27 +9111,6 @@ TextureImporter:
       bones: []
       spriteID: 28f65a6833bc90a40b7f3bfc9e769a54
       internalID: -1346856440
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Custom Edited - Mega Man ZeroZX Customs - Zero_435
-      rect:
-        serializedVersion: 2
-        x: 911
-        y: 476
-        width: 13
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1718245920163a459d71d9f64e88b59
-      internalID: 2128123842
       vertices: []
       indices: 
       edges: []
@@ -13177,7 +13093,7 @@ TextureImporter:
         width: 28
         height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -13427,10 +13343,8 @@ TextureImporter:
       Custom Edited - Mega Man ZeroZX Customs - Zero_330: -639781751
       Custom Edited - Mega Man ZeroZX Customs - Zero_331: -304944447
       Custom Edited - Mega Man ZeroZX Customs - Zero_332: 1656508921
-      Custom Edited - Mega Man ZeroZX Customs - Zero_333: -579396219
       Custom Edited - Mega Man ZeroZX Customs - Zero_334: -947784197
       Custom Edited - Mega Man ZeroZX Customs - Zero_335: -356306894
-      Custom Edited - Mega Man ZeroZX Customs - Zero_336: 1985142838
       Custom Edited - Mega Man ZeroZX Customs - Zero_337: -362254412
       Custom Edited - Mega Man ZeroZX Customs - Zero_338: 966827809
       Custom Edited - Mega Man ZeroZX Customs - Zero_339: 1371299580
@@ -13496,7 +13410,6 @@ TextureImporter:
       Custom Edited - Mega Man ZeroZX Customs - Zero_431: 1102273773
       Custom Edited - Mega Man ZeroZX Customs - Zero_432: 887261438
       Custom Edited - Mega Man ZeroZX Customs - Zero_433: -561321841
-      Custom Edited - Mega Man ZeroZX Customs - Zero_434: -1346856440
       Custom Edited - Mega Man ZeroZX Customs - Zero_435: 2128123842
       Custom Edited - Mega Man ZeroZX Customs - Zero_436: 1515293020
       Custom Edited - Mega Man ZeroZX Customs - Zero_437: 857725625
@@ -13940,7 +13853,10 @@ TextureImporter:
       ThirdAttack7: 1949013108
       ThirdAttack8: 754137766
       ThirdAttack9: 441606455
+      fr: 1985142838
       idle 4: 988407009
+      ong: -579396219
+      p: -1346856440
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
