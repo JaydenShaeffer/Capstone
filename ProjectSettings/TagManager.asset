@@ -9,6 +9,7 @@ TagManager:
   - EnemyAttack
   - EnemyProjectile
   - PlayerProjectile
+  - NextLevel
   layers:
   - Default
   - TransparentFX

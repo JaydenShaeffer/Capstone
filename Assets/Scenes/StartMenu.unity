@@ -219,18 +219,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 935551484}
-        m_TargetAssemblyTypeName: ASyncLoader, Assembly-CSharp
-        m_MethodName: LoadLevelButton
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 1st Level
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &50950524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -503,7 +491,6 @@ RectTransform:
   - {fileID: 1276244527}
   - {fileID: 2089493019}
   - {fileID: 1132328996}
-  - {fileID: 1557570584}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1838,20 +1825,20 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1557570583}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5697917, y: 0.5697917, z: 0.5697917}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2065864873}
   - {fileID: 1830519037}
   - {fileID: 706630965}
-  m_Father: {fileID: 245710780}
-  m_RootOrder: -1
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.0018616}
+  m_AnchoredPosition: {x: 960.00006, y: 398.39078}
   m_SizeDelta: {x: 1920, y: 796.79}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1581327418

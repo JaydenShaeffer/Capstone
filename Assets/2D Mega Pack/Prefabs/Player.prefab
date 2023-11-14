@@ -352,6 +352,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aef1abad75b4414c994ff638f9c4ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimator: {fileID: 6472029379987378935}
+  nextLevelName: LoadingScreen
+  tpSound: {fileID: 8300000, guid: 69d4c6a6b53e34d4095d1c72d5024a58, type: 3}
+  score: 0
   scoreText: {fileID: 0}
 --- !u!114 &1196702144474428109
 MonoBehaviour:
@@ -501,7 +505,9 @@ MonoBehaviour:
   currentHealth: 0
   enemy_Behavior: {fileID: 0}
   healthBar: {fileID: 0}
+  deathScene: DeathScreen
   deathSound: {fileID: 8300000, guid: 52879833b21dcd94bbb6ed9934ec5101, type: 3}
+  isDead: 0
 --- !u!114 &6696912157426629651
 MonoBehaviour:
   m_ObjectHideFlags: 0
