@@ -33,6 +33,16 @@ public class ItemCollector : MonoBehaviour
 
             // Invoke the LoadNextLevel function after the animation duration
             Invoke("LoadNextLevel", GetAnimationDuration("Player_End"));
+             // Set the animation state in PlayerMovement script
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                PlayerMovement playerMovement = player.GetComponent<PlayerMovement>();
+                if (playerMovement != null)
+                {
+                    playerMovement.SetAnimationState(true);
+                }
+            }
         }
     }
 

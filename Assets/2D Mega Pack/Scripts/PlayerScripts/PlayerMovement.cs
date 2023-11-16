@@ -10,6 +10,9 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
     private PlayerHP playerHP;
     [SerializeField] private AudioClip jumpSound;
+    private bool canMove = false;
+    private bool isAnimationPlaying = false;
+    [SerializeField] private float initialDelay = 1.5f; // Adjust the delay as needed
 
     // ----- NEW STUFF TESTING ------ //
     public float runspeed = 7f;
@@ -74,15 +77,25 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        StartCoroutine(EnableMovementAfterDelay());
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         playerHP = GetComponent<PlayerHP>();
+    }
+     private IEnumerator EnableMovementAfterDelay()
+    {
+        yield return new WaitForSeconds(initialDelay);
+
+        // Enable movement after the initial delay
+        // You can add additional initialization code here if needed
+
+        canMove = true;
     }
 
     private void Update()
     {
         // Check if the player is alive before allowing movement or jump input
-        if (!playerHP.isDead)
+        if (canMove && !playerHP.isDead && !isAnimationPlaying)
         {
             if (Input.GetButtonDown("Jump") && !isJumping)
             {
@@ -90,6 +103,7 @@ public class PlayerMovement : MonoBehaviour
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
                 isJumping = true;
                 IsJumping = true; // Set the IsJumping property to trigger the jump animation
+           
             }
         }
     }
@@ -106,9 +120,10 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         // Only allow movement if the player is alive
-        if (!playerHP.isDead)
+        if (canMove && !playerHP.isDead && !isAnimationPlaying)
         {
             rb.velocity = new Vector2(moveInput.x * runspeed, rb.velocity.y);
+            
         }
         else
         {
@@ -144,5 +159,11 @@ public class PlayerMovement : MonoBehaviour
             // face left
             IsFacingRight = false;
         }
+    }
+
+     // Add a method to set the animation state
+    public void SetAnimationState(bool state)
+    {
+        isAnimationPlaying = state;
     }
 }

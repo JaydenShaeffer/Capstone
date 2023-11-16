@@ -144,7 +144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 8636837336549029591}
   parent: {fileID: 391743104804656553}
-  maxHealth: 100
+  maxHealth: 85
 --- !u!61 &3715683309246714307
 BoxCollider2D:
   m_ObjectHideFlags: 0

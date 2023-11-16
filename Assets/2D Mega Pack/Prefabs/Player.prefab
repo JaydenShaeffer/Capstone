@@ -242,6 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpSound: {fileID: 8300000, guid: f23ca1dc6b6701147829205b6522f57a, type: 3}
+  initialDelay: 1
   runspeed: 7
   _IsFacingRight: 1
   jumpForce: 10
@@ -942,7 +943,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8169881454987681477}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.11, y: 0.18, z: 0}
+  m_LocalPosition: {x: 1.4, y: 0.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
