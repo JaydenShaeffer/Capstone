@@ -189,4 +189,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 3800698298622349724}
   parent: {fileID: 905162604706609565}
-  maxHealth: 115
+  maxHealth: 100
