@@ -8,6 +8,8 @@ public class Projectile : MonoBehaviour
     public float moveSpeed = 5.0f; // Adjust the speed as needed
     public GameObject projectile;
     Rigidbody2D rb;
+    public AudioSource audioSource;
+    public AudioClip audioClip;  
 
     private void Awake()
     {
@@ -17,6 +19,8 @@ public class Projectile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioSource.clip = audioClip;
+        audioSource.Play();
         projectile = GameObject.FindWithTag("EnemyProjectile");
         // Calculate the direction based on the projectile's scale
         Vector2 direction = new Vector2(transform.localScale.x, 0);

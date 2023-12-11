@@ -31,6 +31,14 @@ public class EnemyProjectile : EnemyAttack
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.CompareTag("HealthPack") || collision.CompareTag("Z"))
+    {
+        // Projectile goes through health pack and object with "Z" tag, no damage
+        //base.OnTriggerEnter2D(collision); // Execute logic from the parent script first
+        //coll.enabled = true;
+        gameObject.SetActive(true); // When this hits any object, deactivate arrow
+        return;
+    }
         base.OnTriggerEnter2D(collision); //Execute logic from parent script first
         coll.enabled = false;
         gameObject.SetActive(false); //When this hits any object deactivate arrow
