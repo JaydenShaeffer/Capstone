@@ -78,6 +78,7 @@ GameObject:
   - component: {fileID: 8220070918759814164}
   - component: {fileID: 1448984254864108449}
   - component: {fileID: 5745148624321658270}
+  - component: {fileID: 8117256079702204602}
   m_Layer: 9
   m_Name: Pantheon
   m_TagString: Untagged
@@ -259,6 +260,19 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   attackSound: {fileID: 8300000, guid: 8d931d830e39beb43b30517397f40652, type: 3}
+--- !u!114 &8117256079702204602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6255183611105243802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5b56cbbb21a8ee40b7229ea5bd8ec00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyPrefab: {fileID: 0}
 --- !u!1 &6901063400549925359
 GameObject:
   m_ObjectHideFlags: 0

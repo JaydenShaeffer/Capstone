@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2490024014734224973}
   - component: {fileID: 2446155745290577289}
   - component: {fileID: 2584040074998732472}
+  - component: {fileID: 4232761950744176568}
   m_Layer: 9
   m_Name: PantheonWarrior
   m_TagString: Untagged
@@ -190,3 +191,16 @@ MonoBehaviour:
   animator: {fileID: 3800698298622349724}
   parent: {fileID: 905162604706609565}
   maxHealth: 100
+--- !u!114 &4232761950744176568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905162604706609565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5b56cbbb21a8ee40b7229ea5bd8ec00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyPrefab: {fileID: 0}

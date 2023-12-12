@@ -149,6 +149,7 @@ GameObject:
   - component: {fileID: 8140523705172396646}
   - component: {fileID: 6696912157426629651}
   - component: {fileID: 8726667451632958465}
+  - component: {fileID: 1139181250346696670}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -372,8 +373,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 6472029379987378935}
   projectileSpawner: {fileID: 6696912157426629651}
-  audioSource: {fileID: 0}
-  audioClip: {fileID: 8300000, guid: c62e7f2543b9f7146afc1b7f48e6ae7c, type: 3}
 --- !u!114 &7111972299398120590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -617,6 +616,18 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &1139181250346696670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2198327111806152371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50ffae5cd44e2ec4cb6dba5cc665c417, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5395388695733250608
 GameObject:
   m_ObjectHideFlags: 0
