@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65ded3e2b0becdb42ab0f7be5c5c1251, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDMG: 10
+  attackDMG: 15
 --- !u!1 &2140888567029744112
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,7 +501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30f50812a2c68e54793fe882adbda08f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 125
   currentHealth: 0
   enemy_Behavior: {fileID: 0}
   healthBar: {fileID: 0}
@@ -832,7 +832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65ded3e2b0becdb42ab0f7be5c5c1251, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDMG: 20
+  attackDMG: 30
 --- !u!1 &7839597866403429467
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,7 +929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65ded3e2b0becdb42ab0f7be5c5c1251, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDMG: 15
+  attackDMG: 20
 --- !u!1 &8169881454987681477
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,7 +954,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8169881454987681477}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4, y: 0.18, z: 0}
+  m_LocalPosition: {x: 1.611, y: 0.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

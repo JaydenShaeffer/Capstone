@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/2nd Level.unity
     guid: 14a4eda7338a5ad4bbb60c6c9b7f1092
   - enabled: 1
+    path: Assets/Scenes/Bossroom1.unity
+    guid: 355cef86485a6c1488f3b28c64138135
+  - enabled: 1
     path: Assets/Scenes/DeathScreen.unity
     guid: 5a9241a6e0db6d347ac07fe344600e56
   - enabled: 1

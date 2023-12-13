@@ -299,6 +299,7 @@ MonoBehaviour:
   levelNames:
   - 1st Level
   - 2nd Level
+  - Bossroom1
 --- !u!4 &520291492
 Transform:
   m_ObjectHideFlags: 0
@@ -786,7 +787,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1044,7 +1045,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4b60cbd4f82383d47bc37e860ea8c322, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d93b9b6e25b21384dbfeee7615490bfa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

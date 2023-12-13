@@ -11,6 +11,7 @@ TagManager:
   - PlayerProjectile
   - NextLevel
   - HealthPack
+  - Enemy
   layers:
   - Default
   - TransparentFX
