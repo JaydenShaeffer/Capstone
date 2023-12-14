@@ -45,7 +45,7 @@ public class RangedEnemy : MonoBehaviour
             {
                 cooldownTimer = 0;
                 anim.SetTrigger("rangedAttack");
-                SoundManager.instance.PlaySound(attackSound);
+               
             }
         }
 
@@ -53,6 +53,10 @@ public class RangedEnemy : MonoBehaviour
             enemyPatrol.enabled = !PlayerInSight();
     }
 
+    private void AttackAudio()
+    {
+        SoundManager.instance.PlaySound(attackSound);
+    }
     private void RangedAttack()
     {
         cooldownTimer = 0;

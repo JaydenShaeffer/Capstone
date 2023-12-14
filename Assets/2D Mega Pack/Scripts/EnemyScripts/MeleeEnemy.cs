@@ -42,7 +42,7 @@ public class MeleeEnemy : MonoBehaviour
             {
                 cooldownTimer = 0;
                 anim.SetTrigger("meleeAttack");
-                SoundManager.instance.PlaySound(attackSound);
+                
             }
         }
 
@@ -50,6 +50,10 @@ public class MeleeEnemy : MonoBehaviour
             enemyPatrol.enabled = !PlayerInSight();
     }
 
+    private void MeleeSound()
+    {
+        SoundManager.instance.PlaySound(attackSound);
+    }
     private bool PlayerInSight()
     {
         RaycastHit2D hit = 
