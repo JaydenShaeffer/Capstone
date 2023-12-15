@@ -157,7 +157,7 @@ TextureImporter:
         width: 122
         height: 123
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,6 +165,27 @@ TextureImporter:
       bones: []
       spriteID: c659946d9f14f284a88b66620c128645
       internalID: 897624079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FriezaSpiritBomb
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 860
+        width: 122
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc45dc60600fa004ca61ac4333e77bd1
+      internalID: -2049747179
       vertices: []
       indices: 
       edges: []
@@ -180,6 +201,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      FriezaSpiritBomb: -2049747179
       GokuProjectile0: 897624079
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

@@ -31,7 +31,7 @@ public class EnemyProjectile : EnemyAttack
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("HealthPack") || collision.CompareTag("Z") || collision.CompareTag("Enemy"))
+        if (collision.CompareTag("HealthPack") || collision.CompareTag("Z") || collision.CompareTag("Enemy") || collision.CompareTag("Door"))
     {
         // Projectile goes through health pack and object with "Z" tag, no damage
         //base.OnTriggerEnter2D(collision); // Execute logic from the parent script first

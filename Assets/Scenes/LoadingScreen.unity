@@ -298,8 +298,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelNames:
   - 1st Level
-  - 2nd Level
   - Bossroom1
+  - 2nd Level
+  - Bossroom2
+  currentLevelIndex: 0
 --- !u!4 &520291492
 Transform:
   m_ObjectHideFlags: 0
@@ -998,6 +1000,7 @@ GameObject:
   - component: {fileID: 2127421994}
   - component: {fileID: 2127421996}
   - component: {fileID: 2127421995}
+  - component: {fileID: 2127421997}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -1045,7 +1048,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d93b9b6e25b21384dbfeee7615490bfa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4b60cbd4f82383d47bc37e860ea8c322, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1063,3 +1066,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2127421993}
   m_CullTransparentMesh: 1
+--- !u!114 &2127421997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127421993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d135c32d4a147514099ca74a8b3940ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelOne: {fileID: 21300000, guid: 4b60cbd4f82383d47bc37e860ea8c322, type: 3}
+  bossOne: {fileID: 21300000, guid: b941cce9106ccd9458a76debe7a9c249, type: 3}
+  levelTwo: {fileID: 21300000, guid: c34199836aea45a4ba93d56f7d908f0d, type: 3}
+  bossTwo: {fileID: 21300000, guid: c9fb283544aad944abe01ab9a78750ea, type: 3}
+  backGround: {fileID: 2127421995}
+  levelManager: {fileID: 520291491}

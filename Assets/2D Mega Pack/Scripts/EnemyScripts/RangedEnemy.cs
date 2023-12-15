@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RangedEnemy : MonoBehaviour
+public class FriezaScript : MonoBehaviour
 {
-    [Header("Attack Parameters")]
+   [Header("Attack Parameters")]
     [SerializeField] private float attackCooldown;
     [SerializeField] private float range;
     [SerializeField] private int damage;
@@ -50,7 +50,7 @@ public class RangedEnemy : MonoBehaviour
         }
 
         if (enemyPatrol != null)
-            enemyPatrol.enabled = !PlayerInSight();
+           enemyPatrol.enabled = !PlayerInSight();
     }
 
     private void AttackAudio()
@@ -63,6 +63,7 @@ public class RangedEnemy : MonoBehaviour
         fireballs[FindFireball()].transform.position = firepoint.position;
         fireballs[FindFireball()].GetComponent<EnemyProjectile>().ActivateProjectile();
     }
+
     private int FindFireball()
     {
         for (int i = 0; i < fireballs.Length; i++)
@@ -84,7 +85,7 @@ public class RangedEnemy : MonoBehaviour
     }
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
+        Gizmos.color = Color.yellow;
         Gizmos.DrawWireCube(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
             new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z));
     }

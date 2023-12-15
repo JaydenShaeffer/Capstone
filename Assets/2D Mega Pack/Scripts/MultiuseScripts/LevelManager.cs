@@ -5,7 +5,7 @@ public class LevelManager : MonoBehaviour
     public static LevelManager instance; // Singleton instance
 
     public string[] levelNames; // Names of the levels in order
-    private int currentLevelIndex = 0;
+    public int currentLevelIndex = 0;
 
     private void Awake()
     {

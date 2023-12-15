@@ -12,6 +12,7 @@ TagManager:
   - NextLevel
   - HealthPack
   - Enemy
+  - Door
   layers:
   - Default
   - TransparentFX
