@@ -13,6 +13,10 @@ public class PlayerCombat : MonoBehaviour
   //  public AudioClip audioClip;  
     private bool isAirAttacking = false;
     private PlayerMovement playerMovement; // Reference to your PlayerMovement script
+    [Header("Attack Sounds")]
+    [SerializeField] private AudioClip attackSound1;
+    [SerializeField] private AudioClip attackSound2;
+    [SerializeField] private AudioClip attackSound3;
 
     void Start()
     {
@@ -38,11 +42,29 @@ public class PlayerCombat : MonoBehaviour
 
          if (Input.GetKeyDown(KeyCode.H))
         {
-            OnRangedAttack();
+            if (playerMovement.IsJumping == false)
+            {
+                OnRangedAttack();
+            }
         }
         
     }
-    
+
+    private void MeleeSound1()
+    {
+        SoundManager.instance.PlaySound(attackSound1);
+    }
+
+    private void MeleeSound2()
+    {
+        SoundManager.instance.PlaySound(attackSound2);
+    }
+
+    private void MeleeSound3()
+    {
+        SoundManager.instance.PlaySound(attackSound3);
+    }
+
     void AirAttack()
     {
         animator.SetTrigger("AirAttack");

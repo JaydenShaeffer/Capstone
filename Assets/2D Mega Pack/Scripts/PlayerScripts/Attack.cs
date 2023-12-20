@@ -23,9 +23,15 @@ public class Attack : MonoBehaviour
     if (collision.gameObject.layer == LayerMask.NameToLayer("Enemies"))
     {
         Enemy enemy = collision.GetComponent<Enemy>();
+        BossHealthbar bossHP = collision.GetComponent<BossHealthbar>();
         if (enemy != null)
         {
             enemy.TakeDamage(attackDMG);
+            Debug.Log($"Enemy hit for {attackDMG}");
+        }
+        else if (bossHP != null)
+        {
+            bossHP.TakeDamage(attackDMG);
             Debug.Log($"Enemy hit for {attackDMG}");
         }
     }

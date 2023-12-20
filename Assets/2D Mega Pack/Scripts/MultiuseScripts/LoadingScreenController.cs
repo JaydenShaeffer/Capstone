@@ -7,6 +7,7 @@ public class LoadingScreenController : MonoBehaviour
     public Slider loadingSlider;
     public float loadingTime = 3f;
 
+
     private void Start()
     {
         loadingSlider.value = 0f;
@@ -35,6 +36,8 @@ public class LoadingScreenController : MonoBehaviour
     }
     private void RetryGame()
     {
+        Debug.Log("Log that - jeff");
+        LoadingImageChanger.levelCount = 1;
         LevelManager.instance.ResetLevelIndex();
         SceneManager.LoadScene("LoadingScreen"); // Load the first level again
     }

@@ -36,6 +36,8 @@ public class LevelManager : MonoBehaviour
 
     public void ResetLevelIndex()
     {
+        Debug.Log("Log that ong fr - jeff");
+        LoadingImageChanger.levelCount = 0;
         currentLevelIndex = 0;
     }
 }

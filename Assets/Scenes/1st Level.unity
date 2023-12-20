@@ -54303,6 +54303,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3120149814336562631, guid: ee718d72a19873f4894e496ce74e2f04, type: 3}
+      propertyPath: m_Size.y
+      value: 2.8362508
+      objectReference: {fileID: 0}
+    - target: {fileID: 3120149814336562631, guid: ee718d72a19873f4894e496ce74e2f04, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.044651747
+      objectReference: {fileID: 0}
     - target: {fileID: 6627461704954606960, guid: ee718d72a19873f4894e496ce74e2f04, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -54644,6 +54652,14 @@ PrefabInstance:
     - target: {fileID: 8464676525185686417, guid: 0ff7a8bd41f661540a3f8cda9dc4b221, type: 3}
       propertyPath: m_TagString
       value: EnemyProjectile
+      objectReference: {fileID: 0}
+    - target: {fileID: 8840940356867583703, guid: 0ff7a8bd41f661540a3f8cda9dc4b221, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8840940356867583703, guid: 0ff7a8bd41f661540a3f8cda9dc4b221, type: 3}
+      propertyPath: m_Material
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

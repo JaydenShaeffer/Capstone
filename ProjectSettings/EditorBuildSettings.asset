@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Bossroom2.unity
     guid: fd431f103dad10c4db23a5465a924131
   - enabled: 1
+    path: Assets/Scenes/GojoDomain.unity
+    guid: 83c7ae0e70704d748bf8f67b21f6d495
+  - enabled: 1
     path: Assets/Scenes/DeathScreen.unity
     guid: 5a9241a6e0db6d347ac07fe344600e56
   - enabled: 1

@@ -1,10 +1,10 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class FriezaScript : MonoBehaviour
 {
-   [Header("Attack Parameters")]
+    [Header("Attack Parameters")]
     [SerializeField] private float attackCooldown;
     [SerializeField] private float range;
     [SerializeField] private int damage;
@@ -49,8 +49,8 @@ public class FriezaScript : MonoBehaviour
             }
         }
 
-        if (enemyPatrol != null)
-           enemyPatrol.enabled = !PlayerInSight();
+       // if (enemyPatrol != null)
+        //   enemyPatrol.enabled = !PlayerInSight();
     }
 
     private void AttackAudio()
@@ -90,4 +90,3 @@ public class FriezaScript : MonoBehaviour
             new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z));
     }
 }
-*/

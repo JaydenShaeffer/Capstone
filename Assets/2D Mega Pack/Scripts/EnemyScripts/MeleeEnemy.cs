@@ -21,6 +21,7 @@ public class MeleeEnemy : MonoBehaviour
     [SerializeField] private AudioClip attackSound;
     
     //References
+
     private Animator anim;
     private PlayerHP playerHealth;
     private EnemyPatrol enemyPatrol;

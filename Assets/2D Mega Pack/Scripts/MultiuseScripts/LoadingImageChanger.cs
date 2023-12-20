@@ -12,6 +12,7 @@ public class LoadingImageChanger : MonoBehaviour
     public Image backGround;
     public LevelManager levelManager;
     public static int levelCount;
+    public int level;
 
     void Start()
     {
@@ -20,6 +21,7 @@ public class LoadingImageChanger : MonoBehaviour
     }
     void Update()
     {
+        level = levelCount;
         if (levelCount == 1)
         {
             backGround.GetComponent<Image>().sprite = levelOne;

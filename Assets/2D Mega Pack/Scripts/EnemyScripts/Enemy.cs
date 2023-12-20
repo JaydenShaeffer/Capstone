@@ -8,13 +8,18 @@ public class Enemy : MonoBehaviour
    
     [SerializeField] private GameObject parent;
     public int maxHealth = 100;
-    int currentHealth;
+    public int currentHealth;
     private DropKey dropKey;
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
         dropKey = GetComponent<DropKey>(); // Get the DropKey script
+    }
+
+    public void Destroy()
+    {
+        Destroy(parent);
     }
 
     // Update is called once per frame
@@ -38,9 +43,8 @@ public class Enemy : MonoBehaviour
 
     IEnumerator DieFr()
     {
-        animator.SetBool("Dead", true);
+        animator.SetTrigger("Dead");
         yield return new WaitForSeconds(1);
         //Destroy(gameObject);
-        Destroy(parent);
     }
 }

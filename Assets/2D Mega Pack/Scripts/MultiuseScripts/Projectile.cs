@@ -36,9 +36,17 @@ public class Projectile : MonoBehaviour
     {
         projectile = GameObject.FindWithTag("EnemyProjectile");
         Enemy enemy = collision.GetComponent<Enemy>();
+        BossHealthbar bossHP = collision.GetComponent<BossHealthbar>();
         if (enemy != null)
         {
             enemy.TakeDamage(damage);
+            //bossHP.TakeDamage(damage);
+            Debug.Log($"Enemy hit for {damage}");
+            Destroy(gameObject); // Destroy the projectile on collision
+        }
+        else if (bossHP != null)
+        {
+            bossHP.TakeDamage(damage);
             Debug.Log($"Enemy hit for {damage}");
             Destroy(gameObject); // Destroy the projectile on collision
         }

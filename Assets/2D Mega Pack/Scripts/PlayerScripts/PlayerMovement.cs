@@ -70,8 +70,14 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        
     }
 
+    private void Reset()
+    {
+        Debug.Log("This will workP - jeff");
+        GojoScript.domainExpansion = false;
+    }
     private bool isJumping = false;
     //private bool hasSpawned = false; // Add a flag to track if the spawn animation has played
 
