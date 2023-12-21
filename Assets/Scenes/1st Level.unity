@@ -456,6 +456,8 @@ MonoBehaviour:
   animator: {fileID: 642827873}
   parent: {fileID: 642827870}
   maxHealth: 100
+  currentHealth: 0
+  deathSound: {fileID: 0}
 --- !u!58 &139219243
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -51380,6 +51382,8 @@ MonoBehaviour:
   animator: {fileID: 0}
   parent: {fileID: 0}
   maxHealth: 100
+  currentHealth: 0
+  deathSound: {fileID: 0}
 --- !u!1 &1593957057
 GameObject:
   m_ObjectHideFlags: 0
@@ -53633,6 +53637,8 @@ MonoBehaviour:
   animator: {fileID: 2117547408}
   parent: {fileID: 0}
   maxHealth: 100
+  currentHealth: 0
+  deathSound: {fileID: 0}
 --- !u!50 &2117547411
 Rigidbody2D:
   serializedVersion: 4
@@ -53968,6 +53974,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PantheonWarrior
       objectReference: {fileID: 0}
+    - target: {fileID: 2584040074998732472, guid: e9502e4c4512c194689d749e8eb126b1, type: 3}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: e8d9339e16964c248a9463ae1dbbee67, type: 3}
     - target: {fileID: 3743502499157922110, guid: e9502e4c4512c194689d749e8eb126b1, type: 3}
       propertyPath: m_RootOrder
       value: -1

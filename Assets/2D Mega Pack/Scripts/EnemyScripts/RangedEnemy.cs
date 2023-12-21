@@ -23,6 +23,7 @@ public class RangedEnemy : MonoBehaviour
 
     [Header("Attack Sound")]
     [SerializeField] private AudioClip attackSound;
+    float adjustedVolume = 0.8f;
 
     //References
     private Animator anim;
@@ -56,6 +57,10 @@ public class RangedEnemy : MonoBehaviour
     private void AttackAudio()
     {
         SoundManager.instance.PlaySound(attackSound);
+    }
+    private void GokuAttackAudio()
+    {
+        SoundManager.instance.PlaySound(attackSound, adjustedVolume);
     }
     private void RangedAttack()
     {

@@ -51,6 +51,7 @@ public class MeleeEnemy : MonoBehaviour
             enemyPatrol.enabled = !PlayerInSight();
     }
 
+    
     private void MeleeSound()
     {
         SoundManager.instance.PlaySound(attackSound);

@@ -34,6 +34,10 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.CompareTag("HealthPack") || collision.CompareTag("Z") || collision.CompareTag("Door"))
+        {
+            return;
+        }
         projectile = GameObject.FindWithTag("EnemyProjectile");
         Enemy enemy = collision.GetComponent<Enemy>();
         BossHealthbar bossHP = collision.GetComponent<BossHealthbar>();

@@ -23,6 +23,7 @@ public class FriezaScript : MonoBehaviour
 
     [Header("Attack Sound")]
     [SerializeField] private AudioClip attackSound;
+    float adjustedVolume = 0.4f;
 
     //References
     private Animator anim;
@@ -55,7 +56,7 @@ public class FriezaScript : MonoBehaviour
 
     private void AttackAudio()
     {
-        SoundManager.instance.PlaySound(attackSound);
+        SoundManager.instance.PlaySound(attackSound, adjustedVolume);
     }
     private void RangedAttack()
     {

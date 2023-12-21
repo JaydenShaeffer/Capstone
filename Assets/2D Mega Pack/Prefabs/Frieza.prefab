@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 4358957043415291903}
   - component: {fileID: 7987852149377732033}
   - component: {fileID: 5104252850846338134}
-  - component: {fileID: 207094196843010236}
   - component: {fileID: 4907622127108270656}
   - component: {fileID: 8485049303547623225}
+  - component: {fileID: 4119518251233792914}
+  - component: {fileID: 1962532331969094877}
   m_Layer: 9
   m_Name: Frieza
   m_TagString: Enemy
@@ -29,11 +30,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6605007810011963764}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.892913, y: -1.3409108, z: 0.67447746}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5813342444973549731}
   m_Father: {fileID: 0}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -79,7 +81,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 439826482, guid: 59d26cae04d397d4988ca264b7e0b1c9, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.97334313, b: 0.3820755, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
@@ -122,30 +124,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03797e0be7796a34798787efbdc25661, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 2
-  range: 0.43
-  damage: 30
-  colliderDistance: 3.66
+  attackCooldown: 1
+  range: 0.4
+  damage: 35
+  colliderDistance: 4.24
   boxCollider: {fileID: 8485049303547623225}
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
   attackSound: {fileID: 8300000, guid: 697d9eda1b95a9249b7b7331c673ba6a, type: 3}
---- !u!114 &207094196843010236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6605007810011963764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b972d8c0005771246b410c9a0fd2f7fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 7987852149377732033}
-  parent: {fileID: 6605007810011963764}
-  maxHealth: 100
 --- !u!114 &4907622127108270656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5b56cbbb21a8ee40b7229ea5bd8ec00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyPrefab: {fileID: 0}
+  keyPrefab: {fileID: 5421869134392777127, guid: a879539066ffe9b499dc2aed631cdff8, type: 3}
 --- !u!61 &8485049303547623225
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -204,3 +191,75 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8764396, y: 2.5555556}
   m_EdgeRadius: 0
+--- !u!114 &4119518251233792914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6605007810011963764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1465e0a96ee9fa479aaa124a5bc34d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackCooldown: 1
+  range: 2
+  damage: 1
+  firepoint: {fileID: 5813342444973549731}
+  fireballs:
+  - {fileID: 0}
+  colliderDistance: 2.07
+  boxCollider: {fileID: 8485049303547623225}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  attackSound: {fileID: 8300000, guid: 1a829f8b534e1414ba36caa4b8ed8131, type: 3}
+--- !u!114 &1962532331969094877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6605007810011963764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e56b2c17fa3f1340a1d0ffa38b134b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 7987852149377732033}
+  parent: {fileID: 6605007810011963764}
+  maxHealth: 350
+  currentHealth: 350
+  healthBar: {fileID: 0}
+--- !u!1 &7580999560297634712
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5813342444973549731}
+  m_Layer: 9
+  m_Name: Firepoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5813342444973549731
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7580999560297634712}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.25, y: 2.8, z: 0.47394347}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8496458259604320679}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

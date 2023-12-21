@@ -10,6 +10,10 @@ public class Enemy : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
     private DropKey dropKey;
+    [Header("Death Sound")]
+    [SerializeField] private AudioClip deathSound;
+    float adjustedVolume = 0.7f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +24,11 @@ public class Enemy : MonoBehaviour
     public void Destroy()
     {
         Destroy(parent);
+    }
+
+    private void DeathSound()
+    {
+        SoundManager.instance.PlaySound(deathSound, adjustedVolume);
     }
 
     // Update is called once per frame
