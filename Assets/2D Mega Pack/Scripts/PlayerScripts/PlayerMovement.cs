@@ -14,7 +14,17 @@ public class PlayerMovement : MonoBehaviour
     private bool isAnimationPlaying = false;
     [SerializeField] private float initialDelay = 1.5f; // Adjust the delay as needed
 
-    // ----- NEW STUFF TESTING ------ //
+    /*// ----- NEW STUFF TESTING ------ //
+    [Header("Knockback")]
+    [SerializeField] private Transform center;
+    [SerializeField] private float knockbackVelocity = 8f;
+    [SerializeField] private bool knockbacked;
+    */
+
+    
+
+
+
     public float runspeed = 7f;
     Vector2 moveInput;
     public bool _IsFacingRight = true;
@@ -70,6 +80,7 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+       
         
     }
 
@@ -101,8 +112,9 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         // Check if the player is alive before allowing movement or jump input
-        if (canMove && !playerHP.isDead && !isAnimationPlaying)
+        if (canMove && !playerHP.isDead && !isAnimationPlaying && !Starplatinum.isPlayerFrozen)
         {
+           
             if (Input.GetButtonDown("Jump") && !isJumping)
             {
                 SoundManager.instance.PlaySound(jumpSound);
@@ -111,6 +123,12 @@ public class PlayerMovement : MonoBehaviour
                 IsJumping = true; // Set the IsJumping property to trigger the jump animation
            
             }
+        }
+
+        if (Starplatinum.isPlayerFrozen)
+        {
+            Debug.Log("wow who wouldve thought");
+           
         }
     }
 
@@ -126,7 +144,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         // Only allow movement if the player is alive
-        if (canMove && !playerHP.isDead && !isAnimationPlaying)
+        if (canMove && !playerHP.isDead && !isAnimationPlaying && !Starplatinum.isPlayerFrozen /*&& !knockbacked*/)
         {
             rb.velocity = new Vector2(moveInput.x * runspeed, rb.velocity.y);
             
@@ -172,4 +190,11 @@ public class PlayerMovement : MonoBehaviour
     {
         isAnimationPlaying = state;
     }
+
+    /*public void Knockback(Transform t)
+    {
+        var dir = center.position - t.position;
+        knockbacked = true;
+        rb.velocity = dir.normalized * knockbackVelocity;
+    }*/
 }
