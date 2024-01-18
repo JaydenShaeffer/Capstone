@@ -28,6 +28,9 @@ public class EnemyPatrol : MonoBehaviour
     [Header("Enemy Animator")]
     [SerializeField] private Animator anim;
 
+    [Header("Player Detection")]
+    [SerializeField] private Transform player;
+    [SerializeField] private float detectionDistance;
 
     private void Awake()
     {
@@ -46,6 +49,8 @@ public class EnemyPatrol : MonoBehaviour
 
     private void Update()
     {
+        CheckPlayerHit();
+
         if(leftEdge != null && rightEdge != null && enemy != null)
         {
             if(movingLeft)
@@ -68,6 +73,23 @@ public class EnemyPatrol : MonoBehaviour
             }
         }
     }
+
+    private void CheckPlayerHit()
+    {
+        if (player != null)
+        {
+            float distanceToPlayer = Vector3.Distance(player.position, enemy.position);
+
+            // Check if player is behind the enemy within the detection distance
+            if (distanceToPlayer < detectionDistance && Mathf.Sign(player.position.x - enemy.position.x) != Mathf.Sign(enemy.localScale.x))
+            {
+                // Player hit from behind, turn around
+                movingLeft = !movingLeft;
+                DirectionChange();
+            }
+        }
+    }
+
     private void DirectionChange()
     {
         anim.SetBool("moving", false);
@@ -94,6 +116,14 @@ public class EnemyPatrol : MonoBehaviour
         enemy.position = new Vector3(enemy.position.x + Time.deltaTime * _direction * speed,
             enemy.position.y, enemy.position.z);
     }
+
+    private void OnDrawGizmosSelected()
+    {
+        // Visualize detection distance
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(enemy.position, detectionDistance);
+    }
+    
 }
 
 

@@ -144,6 +144,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 407560406734567138, guid: d7c580c97bfb91144bd34b524ad94f1d, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1256193384}
+    - target: {fileID: 407560406734567138, guid: d7c580c97bfb91144bd34b524ad94f1d, type: 3}
       propertyPath: idleDuration
       value: 0.5
       objectReference: {fileID: 0}
@@ -2859,6 +2863,10 @@ PrefabInstance:
       propertyPath: enemy
       value: 
       objectReference: {fileID: 5792262473798184269}
+    - target: {fileID: 407560406734567138, guid: d7c580c97bfb91144bd34b524ad94f1d, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1256193384}
     - target: {fileID: 1199752907952510948, guid: d7c580c97bfb91144bd34b524ad94f1d, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -3824,6 +3832,10 @@ PrefabInstance:
       propertyPath: speed
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 407560406734567138, guid: d7c580c97bfb91144bd34b524ad94f1d, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1256193384}
     - target: {fileID: 407560406734567138, guid: d7c580c97bfb91144bd34b524ad94f1d, type: 3}
       propertyPath: idleDuration
       value: 0.1

@@ -114,3 +114,5 @@ MonoBehaviour:
   speed: 1
   idleDuration: 1
   anim: {fileID: 0}
+  player: {fileID: 0}
+  detectionDistance: 2

@@ -6,14 +6,14 @@ public class Starplatinum : MonoBehaviour
 {
     [Header("Attack Sound")]
     [SerializeField] private AudioClip attackSound;
-    float adjustedVolume = 5.5f;
+    float adjustedVolume = 2.5f;
 
     private Animator anim;
 
     public float attackInterval = 60f; // Time between attacks in seconds
-    public float freezeDuration = 2f; // Duration of the freeze in seconds
+    public float freezeDuration = 20f; // Duration of the freeze in seconds
 
-    public static bool isPlayerFrozen = false;
+    [SerializeField] public static bool isPlayerFrozen = false;
     public float attackTimer = 0f;
 
      // Start is called before the first frame update
@@ -35,25 +35,7 @@ public class Starplatinum : MonoBehaviour
             attackTimer = attackInterval; // Reset the attack timer
         }
 
-        // Check if the player is frozen
-        if (isPlayerFrozen)
-        {
-            // If frozen, reduce the freeze duration and prevent player movement
-            freezeDuration -= Time.deltaTime;
-
-            if (freezeDuration <= 0f)
-            {
-                // If freeze duration is over, allow the player to move again
-                isPlayerFrozen = false;
-                // Reset freeze duration for the next attack
-                freezeDuration = 2f;
-            }
-            else
-            {
-                // If still frozen, you can add visual effects or feedback here
-                Debug.Log("Player is frozen!");
-            }
-        }
+        
     }
 
     void Attack()
@@ -64,6 +46,16 @@ public class Starplatinum : MonoBehaviour
 
     private void AttackAudioSP()
     {
-        SoundManager.instance.PlaySound(attackSound);
+        SoundManager.instance.PlaySound(attackSound, adjustedVolume);
+    }
+
+    public void Freeze()
+    {
+        isPlayerFrozen = true;
+    }
+
+    public void Unfreeze()
+    {
+        isPlayerFrozen = false;
     }
 }

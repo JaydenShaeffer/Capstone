@@ -74,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1920604843
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -1638689321, guid: 1db78b24ae4366442a21754502cb2346, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -103,8 +103,6 @@ MonoBehaviour:
   damage: 25
   moveSpeed: 9
   projectile: {fileID: 5793255882843291013, guid: ef19682655a48814ba444a7a5761d3af, type: 3}
-  healthPack: {fileID: 4118035745269764772, guid: cc689332d7c0f4241aa381de9a07ae44, type: 3}
-  z: {fileID: 2613214595650244248, guid: 3669a962df01fb7489f6ce72267dd15a, type: 3}
   audioSource: {fileID: -931921999569593278}
   audioClip: {fileID: 8300000, guid: c62e7f2543b9f7146afc1b7f48e6ae7c, type: 3}
 --- !u!50 &-2827323974213847897
