@@ -12,11 +12,17 @@ public class HealthPack : MonoBehaviour
         {
             PlayerHP playerHealth = other.GetComponent<PlayerHP>();
 
-            if (playerHealth != null)
-            {
-                playerHealth.Heal(healthAmount);
-                Destroy(gameObject);  // Destroy the health pack when collected
-            }
+            // Check if the player's health is not already at the maximum
+                if (playerHealth.currentHealth < playerHealth.maxHealth)
+                {
+                    playerHealth.Heal(healthAmount);
+                    Destroy(gameObject);  // Destroy the health pack when collected
+                }
+                else
+                {
+                    // Player is already at max health, do not pick up health packs
+                    Debug.Log("Your already max hp loser");
+                }
         }
     }
 }

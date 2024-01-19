@@ -7,11 +7,26 @@ public class ItemCollector : MonoBehaviour
 {
     public Animator playerAnimator;
     public string nextLevelName;
+    public bool secret = false;
+    public string secretLevelName;
     [SerializeField] private AudioClip tpSound;
 
-    [SerializeField] private int score = 0;
+    [SerializeField] private static int score;
 
     [SerializeField] private TextMeshProUGUI scoreText;
+
+    void Start()
+    {
+        scoreText.text = "Score: " + score;
+    }
+
+    void Update()
+    {
+        if (score >= 10000 )
+        {
+            secret = true;
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -30,7 +45,10 @@ public class ItemCollector : MonoBehaviour
             // Play transition animation
             playerAnimator.SetTrigger("End");
             SoundManager.instance.PlaySound(tpSound);
-
+            if (secret = true)
+            {
+                Invoke("secretNextLevel", GetAnimationDuration("Player_End"));
+            }
             // Invoke the LoadNextLevel function after the animation duration
             Invoke("LoadNextLevel", GetAnimationDuration("Player_End"));
              // Set the animation state in PlayerMovement script
@@ -42,6 +60,7 @@ public class ItemCollector : MonoBehaviour
                 {
                     playerMovement.SetAnimationState(true);
                 }
+                
             }
         }
     }
@@ -50,6 +69,12 @@ public class ItemCollector : MonoBehaviour
     {
         // Load the next level
         SceneManager.LoadScene(nextLevelName);
+    }
+
+    void secretNextLevel()
+    {
+        // Load the next level
+        SceneManager.LoadScene(secretLevelName);
     }
 
     float GetAnimationDuration(string animationClipName)

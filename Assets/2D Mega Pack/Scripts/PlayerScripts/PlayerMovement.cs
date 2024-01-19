@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isAnimationPlaying = false;
     [SerializeField] private float initialDelay = 1.5f; // Adjust the delay as needed
 
+    public float knockbackForce = 10f;
     /*// ----- NEW STUFF TESTING ------ //
     [Header("Knockback")]
     [SerializeField] private Transform center;
@@ -134,6 +135,16 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Enemies"))
+        {
+            // Calculate knockback direction
+            Vector2 knockbackDirection = (transform.position - collision.transform.position).normalized;
+
+            // Apply knockback force
+            rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse);
+        }
+
         if (collision.gameObject.CompareTag("Ground"))
         {
             isJumping = false;

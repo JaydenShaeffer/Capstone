@@ -62,13 +62,23 @@ public class PlayerHP : MonoBehaviour
 
     public void Heal(int amount)
     {
-        currentHealth += amount;
-
-        if (currentHealth > maxHealth)
+        // Check if the player's current health is not already at the maximum
+        if (currentHealth < maxHealth)
         {
-            currentHealth = maxHealth;
-        }
+            currentHealth += amount;
 
-        healthBar.SetHealth(currentHealth);
+            // Ensure that healing doesn't exceed the maximum health
+            if (currentHealth > maxHealth)
+            {
+                currentHealth = maxHealth;
+            }
+
+            healthBar.SetHealth(currentHealth);
+        }
+        else
+        {
+            // Player is already at max health, do not pick up health packs
+            Debug.Log("Already at max health, cannot pick up health packs.");
+        }
     }
 }

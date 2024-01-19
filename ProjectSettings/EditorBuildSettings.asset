@@ -33,9 +33,15 @@ EditorBuildSettings:
     path: Assets/Scenes/GojoDomain.unity
     guid: 83c7ae0e70704d748bf8f67b21f6d495
   - enabled: 1
+    path: Assets/Scenes/SecretLevel.unity
+    guid: bab4dc808f10f6b4fbd50de93cf84d98
+  - enabled: 1
     path: Assets/Scenes/DeathScreen.unity
     guid: 5a9241a6e0db6d347ac07fe344600e56
   - enabled: 1
     path: Assets/Scenes/WinScreen.unity
     guid: a2c54f6d680866a44ba79af5926c0a62
+  - enabled: 1
+    path: Assets/Scenes/SecretLoadingScreen.unity
+    guid: 9945d832cd2d2b345952397b0bb527cb
   m_configObjects: {}

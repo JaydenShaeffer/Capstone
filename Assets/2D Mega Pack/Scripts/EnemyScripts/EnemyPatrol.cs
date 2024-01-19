@@ -76,7 +76,7 @@ public class EnemyPatrol : MonoBehaviour
 
     private void CheckPlayerHit()
     {
-        if (player != null)
+        if (player != null && enemy != null)
         {
             float distanceToPlayer = Vector3.Distance(player.position, enemy.position);
 

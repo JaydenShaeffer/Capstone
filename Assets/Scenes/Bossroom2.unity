@@ -259,7 +259,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 74357232}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0cc7f9c44876be43844333e36405759, type: 3}
   m_Name: 
@@ -2699,6 +2699,10 @@ PrefabInstance:
     - target: {fileID: 6279364734693518915, guid: cc689332d7c0f4241aa381de9a07ae44, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8722832079600998914, guid: cc689332d7c0f4241aa381de9a07ae44, type: 3}
+      propertyPath: healthAmount
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15754,10 +15758,6 @@ PrefabInstance:
     - target: {fileID: 4325080506473272238, guid: 631ed4a770cb4694d980e7f21294af36, type: 3}
       propertyPath: resetTime
       value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 4560856179524961511, guid: 631ed4a770cb4694d980e7f21294af36, type: 3}
-      propertyPath: maxHealth
-      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 5151395056194524627, guid: 631ed4a770cb4694d980e7f21294af36, type: 3}
       propertyPath: range
