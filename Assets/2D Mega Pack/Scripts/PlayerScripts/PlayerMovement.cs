@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isAnimationPlaying = false;
     [SerializeField] private float initialDelay = 1.5f; // Adjust the delay as needed
 
+    public static bool isStunned = false;
     public float knockbackForce = 10f;
     /*// ----- NEW STUFF TESTING ------ //
     [Header("Knockback")]
@@ -113,7 +114,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         // Check if the player is alive before allowing movement or jump input
-        if (canMove && !playerHP.isDead && !isAnimationPlaying && !Starplatinum.isPlayerFrozen)
+        if (canMove && !playerHP.isDead && !isAnimationPlaying && !Starplatinum.isPlayerFrozen && !isStunned)
         {
            
             if (Input.GetButtonDown("Jump") && !isJumping)
@@ -155,7 +156,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         // Only allow movement if the player is alive
-        if (canMove && !playerHP.isDead && !isAnimationPlaying && !Starplatinum.isPlayerFrozen /*&& !knockbacked*/)
+        if (canMove && !playerHP.isDead && !isAnimationPlaying && !Starplatinum.isPlayerFrozen && !isStunned)
         {
             rb.velocity = new Vector2(moveInput.x * runspeed, rb.velocity.y);
             

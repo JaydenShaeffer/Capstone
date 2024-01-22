@@ -11,6 +11,16 @@ public class BossHealthbar : MonoBehaviour
     public int currentHealth;
     private DropKey dropKey;
     public HealthBar healthBar;
+
+    [Header("Spawn Sound")]
+    [SerializeField] private AudioClip spawnSound;
+    float adjustedVolume = 1.0f;
+
+    [Header("Death Sound")]
+    [SerializeField] private AudioClip deathSound;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,5 +59,15 @@ public class BossHealthbar : MonoBehaviour
         animator.SetTrigger("Dead");
         yield return new WaitForSeconds(1);
         //Destroy(gameObject);
+    }
+
+    private void SpawnAudio()
+    {
+        SoundManager.instance.PlaySound(spawnSound);
+    }
+
+    private void DeathAudio()
+    {
+        SoundManager.instance.PlaySound(deathSound);
     }
 }
