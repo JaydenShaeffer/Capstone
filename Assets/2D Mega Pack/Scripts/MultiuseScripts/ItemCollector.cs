@@ -22,7 +22,7 @@ public class ItemCollector : MonoBehaviour
 
     void Update()
     {
-        if (score >= 10000 )
+        if (score >= 700 )
         {
             secret = true;
         }
@@ -45,12 +45,24 @@ public class ItemCollector : MonoBehaviour
             // Play transition animation
             playerAnimator.SetTrigger("End");
             SoundManager.instance.PlaySound(tpSound);
+
+            
+
             if (secret = true)
             {
+                if (score <= 600)
+                {
+                    Debug.Log("I am addicted - jeff");
+                    // Invoke the LoadNextLevel function after the animation duration
+                    Invoke("LoadNextLevel", GetAnimationDuration("Player_End")); 
+                    return;
+                }   
+
+                Debug.Log("I <3 Ty soooooooooooooo much :3");
                 Invoke("secretNextLevel", GetAnimationDuration("Player_End"));
             }
-            // Invoke the LoadNextLevel function after the animation duration
-            Invoke("LoadNextLevel", GetAnimationDuration("Player_End"));
+            
+           
              // Set the animation state in PlayerMovement script
             GameObject player = GameObject.FindGameObjectWithTag("Player");
             if (player != null)
