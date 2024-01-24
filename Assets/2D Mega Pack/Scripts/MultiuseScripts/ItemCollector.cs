@@ -58,7 +58,7 @@ public class ItemCollector : MonoBehaviour
                     return;
                 }   
 
-                Debug.Log("I <3 Ty soooooooooooooo much :3");
+                Debug.Log("SecretLevel");
                 Invoke("secretNextLevel", GetAnimationDuration("Player_End"));
             }
             
