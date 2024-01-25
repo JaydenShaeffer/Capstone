@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public int damage = 10;
+    public float damage = 25;
     public float moveSpeed = 5.0f; // Adjust the speed as needed
     public GameObject projectile;
     Rigidbody2D rb;
@@ -16,12 +16,24 @@ public class Projectile : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
+    public void SetDamage(float newDamage)
+    {
+        damage = newDamage;
+    }
+
+    public int GetDamage()
+    {
+        return damage;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         audioSource.clip = audioClip;
         audioSource.Play();
+
         projectile = GameObject.FindWithTag("EnemyProjectile");
+
         // Calculate the direction based on the projectile's scale
         Vector2 direction = new Vector2(transform.localScale.x, 0);
 
@@ -41,6 +53,7 @@ public class Projectile : MonoBehaviour
         projectile = GameObject.FindWithTag("EnemyProjectile");
         Enemy enemy = collision.GetComponent<Enemy>();
         BossHealthbar bossHP = collision.GetComponent<BossHealthbar>();
+
         if (enemy != null)
         {
             enemy.TakeDamage(damage);

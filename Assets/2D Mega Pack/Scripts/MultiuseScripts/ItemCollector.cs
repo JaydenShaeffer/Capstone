@@ -11,7 +11,7 @@ public class ItemCollector : MonoBehaviour
     public string secretLevelName;
     [SerializeField] private AudioClip tpSound;
 
-    [SerializeField] private static int score;
+    [SerializeField] public static int score;
 
     [SerializeField] private TextMeshProUGUI scoreText;
 
@@ -22,8 +22,9 @@ public class ItemCollector : MonoBehaviour
 
     void Update()
     {
-        if (score >= 700 )
+        if (score >= 1000)
         {
+            LevelManager.secretStuck = true;
             secret = true;
         }
     }
@@ -50,7 +51,7 @@ public class ItemCollector : MonoBehaviour
 
             if (secret = true)
             {
-                if (score <= 600)
+                if (score <= 900 && LevelManager.secretStuck == false)
                 {
                     Debug.Log("I am addicted - jeff");
                     // Invoke the LoadNextLevel function after the animation duration

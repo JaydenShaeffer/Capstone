@@ -5,7 +5,8 @@ public class SecretLevelManager : MonoBehaviour
     public static SecretLevelManager instance; // Singleton instance
 
     public string[] levelNames; // Names of the levels in order
-    public int currentLevelIndex = 0;
+    public static int SecretcurrentLevelIndex = 0;
+    
 
     private void Awake()
     {
@@ -22,9 +23,10 @@ public class SecretLevelManager : MonoBehaviour
 
     public string GetNextLevel()
     {
-        if (currentLevelIndex < levelNames.Length)
+        ItemCollector.score = 0;
+        if (SecretcurrentLevelIndex < levelNames.Length)
         {
-            return levelNames[currentLevelIndex++];
+            return levelNames[SecretcurrentLevelIndex++];
         }
         else
         {
@@ -36,8 +38,11 @@ public class SecretLevelManager : MonoBehaviour
 
     public void ResetLevelIndex()
     {
+        LevelManager.secretStuck = false;
         Debug.Log("Log that ong fr - jeff");
         LoadingImageChanger.levelCount = 0;
-        currentLevelIndex = 0;
+        SecretLoadingImageChanger.levelCount = 0;
+        LevelManager.currentLevelIndex = 0;
+        SecretcurrentLevelIndex = 0;
     }
 }

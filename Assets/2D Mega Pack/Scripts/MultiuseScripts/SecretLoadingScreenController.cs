@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LoadingScreenController : MonoBehaviour
+public class SecretLoadingScreenController : MonoBehaviour
 {
     public Slider loadingSlider;
     public float loadingTime = 3f;
@@ -22,7 +22,7 @@ public class LoadingScreenController : MonoBehaviour
 
     private void LoadNextLevel()
     {
-        string nextLevel = LevelManager.instance.GetNextLevel();
+        string nextLevel = SecretLevelManager.instance.GetNextLevel();
 
         if (nextLevel != null)
         {
@@ -36,11 +36,11 @@ public class LoadingScreenController : MonoBehaviour
     }
     private void RetryGame()
     {
-        
+        ItemCollector.score = 0;
         Debug.Log("Log that - jeff");
         LoadingImageChanger.levelCount = 1;
-        LevelManager.instance.ResetLevelIndex();
         SecretLevelManager.instance.ResetLevelIndex();
+        LevelManager.instance.ResetLevelIndex();
         SceneManager.LoadScene("LoadingScreen"); // Load the first level again
     }
 

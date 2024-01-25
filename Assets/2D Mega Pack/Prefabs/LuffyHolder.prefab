@@ -178,7 +178,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.07469177, y: 0.059752703}
+  m_Offset: {x: 0.6782856, y: -0.047209263}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -189,7 +189,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.737335, y: 3.8551202}
+  m_Size: {x: 3.0227852, y: 3.3891716}
   m_EdgeRadius: 0
 --- !u!114 &2469975490924418976
 MonoBehaviour:
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 20
   speed: 6
-  resetTime: 7
+  resetTime: 5
 --- !u!95 &5549048336458375645
 Animator:
   serializedVersion: 5
@@ -258,7 +258,7 @@ Transform:
   - {fileID: 53024555339617326}
   - {fileID: 1014480678470287583}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6269289411844688639
 GameObject:
@@ -382,7 +382,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.03147888, y: 0.051196814}
+  m_Offset: {x: 0.03147888, y: 0.41803217}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -393,7 +393,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7497482, y: 2.8169937}
+  m_Size: {x: 1.7497482, y: 3.5506644}
   m_EdgeRadius: 0
 --- !u!95 &6216334562321981313
 Animator:
@@ -446,7 +446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackCooldown: 1.5
-  range: 18.8
+  range: 41.7
   damage: 1
   firepoint: {fileID: 1526346842208604043}
   fireballs:

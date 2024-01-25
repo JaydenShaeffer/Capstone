@@ -247,7 +247,7 @@ MonoBehaviour:
   knockbackForce: 8
   runspeed: 30
   _IsFacingRight: 1
-  jumpForce: 10
+  jumpForce: 20
   _isJumping: 0
   _isMoving: 0
 --- !u!50 &3564530189950671657

@@ -25,6 +25,12 @@ public class PlayerHP : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
     }
 
+    // Update is called once per frame
+    void Update()
+    {
+        CheckHP(); // Continuously check HP
+    }
+
     public void TakeDamage(int damage)
     {
         if (!isDead) // Check if the player is already dead
@@ -39,6 +45,20 @@ public class PlayerHP : MonoBehaviour
         }
     }
 
+    void CheckHP()
+    {
+        // Check if HP is below 50%
+        if (currentHealth <= maxHealth * 0.55f)
+        {
+            // Set the animator parameter to trigger the injured idle animation
+            anim.SetBool("isInjured", true);
+        }
+        else
+        {
+            // Set the animator parameter to normal idle animation
+            anim.SetBool("isInjured", false);
+        }
+    }
     void Die()
     {
         if (!isDead)
