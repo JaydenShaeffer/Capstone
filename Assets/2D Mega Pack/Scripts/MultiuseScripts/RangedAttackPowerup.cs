@@ -1,10 +1,10 @@
-using System.Collections;
+/*using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class RangedAttackPowerup : MonoBehaviour
 {
-    public Sprite poweredUpSprite;
+
     private Sprite originalSprite;
     private bool isPoweredUp = false;
     private float powerUpDuration = 10f;
@@ -59,3 +59,4 @@ public class RangedAttackPowerup : MonoBehaviour
         timer = 0f;
     }
 }
+*/

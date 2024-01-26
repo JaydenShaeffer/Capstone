@@ -4,36 +4,38 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public float damage = 25;
+   // public Sprite originalSprite;
+  //  public Sprite poweredUpSprite;
+    public static int damage = 25;
     public float moveSpeed = 5.0f; // Adjust the speed as needed
     public GameObject projectile;
     Rigidbody2D rb;
+    [SerializeField] private AudioClip attackSound;
+    [SerializeField] private AudioClip poweredupAttackSound;
+
     public AudioSource audioSource;
-    public AudioClip audioClip;  
+  //  public AudioClip audioClip;  
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    public void SetDamage(float newDamage)
-    {
-        damage = newDamage;
-    }
-
-    public int GetDamage()
-    {
-        return damage;
-    }
-
     // Start is called before the first frame update
     void Start()
     {
-        audioSource.clip = audioClip;
-        audioSource.Play();
-
+        if(ItemCollector.isPoweredUp == true)
+        {
+            SoundManager.instance.PlaySound(poweredupAttackSound);
+        }
+        if(ItemCollector.isPoweredUp == false)
+        {
+            SoundManager.instance.PlaySound(attackSound);
+        }
+       
+        //audioSource.clip = audioClip;
+       // audioSource.Play();
         projectile = GameObject.FindWithTag("EnemyProjectile");
-
         // Calculate the direction based on the projectile's scale
         Vector2 direction = new Vector2(transform.localScale.x, 0);
 
@@ -46,14 +48,13 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("HealthPack") || collision.CompareTag("Z") || collision.CompareTag("Door"))
+        if (collision.CompareTag("HealthPack") || collision.CompareTag("Z") || collision.CompareTag("Door") || collision.CompareTag("Powerup"))
         {
             return;
         }
         projectile = GameObject.FindWithTag("EnemyProjectile");
         Enemy enemy = collision.GetComponent<Enemy>();
         BossHealthbar bossHP = collision.GetComponent<BossHealthbar>();
-
         if (enemy != null)
         {
             enemy.TakeDamage(damage);

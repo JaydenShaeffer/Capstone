@@ -245,9 +245,9 @@ MonoBehaviour:
   jumpSound: {fileID: 8300000, guid: f23ca1dc6b6701147829205b6522f57a, type: 3}
   initialDelay: 1
   knockbackForce: 8
-  runspeed: 30
+  runspeed: 7
   _IsFacingRight: 1
-  jumpForce: 20
+  jumpForce: 10
   _isJumping: 0
   _isMoving: 0
 --- !u!50 &3564530189950671657
@@ -355,10 +355,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aef1abad75b4414c994ff638f9c4ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  originalSprite: {fileID: -1638689321, guid: 1db78b24ae4366442a21754502cb2346, type: 3}
+  poweredUpSprite: {fileID: -568427246, guid: e52ce20be9dc678449a31ae43b34f029, type: 3}
+  projectile: {fileID: 1744518909288911979, guid: d25d7524564462042b04ec9b8c745b33, type: 3}
   playerAnimator: {fileID: 6472029379987378935}
   nextLevelName: LoadingScreen
   secret: 0
   secretLevelName: SecretLoadingScreen
+  zSound: {fileID: 8300000, guid: 6e2efcc2b967609488d1e7bca758a07a, type: 3}
+  powerupSound: {fileID: 8300000, guid: 3dc2d29aae7673c4d94f803cb3e56330, type: 3}
   tpSound: {fileID: 8300000, guid: 69d4c6a6b53e34d4095d1c72d5024a58, type: 3}
   scoreText: {fileID: 0}
 --- !u!114 &1196702144474428109
@@ -491,7 +496,10 @@ MonoBehaviour:
   enemy_Behavior: {fileID: 0}
   healthBar: {fileID: 0}
   deathScene: DeathScreen
+  injured: 0
   deathSound: {fileID: 8300000, guid: 52879833b21dcd94bbb6ed9934ec5101, type: 3}
+  healSound: {fileID: 8300000, guid: 71b4ff1b36b792446a6a97efdb58e47f, type: 3}
+  injuredSound: {fileID: 8300000, guid: 7894d0d73e51f144191154761440e402, type: 3}
   isDead: 0
 --- !u!114 &6696912157426629651
 MonoBehaviour:

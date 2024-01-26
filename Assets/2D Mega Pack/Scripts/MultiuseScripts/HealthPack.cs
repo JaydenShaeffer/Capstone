@@ -5,6 +5,9 @@ using UnityEngine;
 public class HealthPack : MonoBehaviour
 {
     public int healthAmount = 25;  // Adjust this value as needed
+    [Header("Heal Sound")]
+    [SerializeField] private AudioClip healSound;
+    float adjustedVolume = 5.5f;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -15,8 +18,10 @@ public class HealthPack : MonoBehaviour
             // Check if the player's health is not already at the maximum
                 if (playerHealth.currentHealth < playerHealth.maxHealth)
                 {
+                    SoundManager.instance.PlaySound(healSound, adjustedVolume);
                     playerHealth.Heal(healthAmount);
                     Destroy(gameObject);  // Destroy the health pack when collected
+                  
                 }
                 else
                 {

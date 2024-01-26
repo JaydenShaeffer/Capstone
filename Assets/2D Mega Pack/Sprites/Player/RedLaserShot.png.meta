@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d8dfc0994a755a64ab7bb9ef090519ef
+guid: e52ce20be9dc678449a31ae43b34f029
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 69
+  spritePixelsToUnits: 15
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -149,64 +149,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GokuProjectile0
+      name: RedLaserShot
       rect:
         serializedVersion: 2
-        x: 643
-        y: 860
-        width: 122
-        height: 123
+        x: 56
+        y: 22
+        width: 32
+        height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c659946d9f14f284a88b66620c128645
-      internalID: 897624079
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FriezaSpiritBomb
-      rect:
-        serializedVersion: 2
-        x: 1610
-        y: 860
-        width: 122
-        height: 123
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc45dc60600fa004ca61ac4333e77bd1
-      internalID: -2049747179
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BuffedRa
-      rect:
-        serializedVersion: 2
-        x: 62
-        y: 265
-        width: 195
-        height: 70
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a70090e5e6782bb4bbc5806c70a2ad9d
-      internalID: -84646484
+      spriteID: 9053c59b120dbbf499daa005b2a100b1
+      internalID: -568427246
       vertices: []
       indices: 
       edges: []
@@ -222,9 +180,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BuffedRa: -84646484
-      FriezaSpiritBomb: -2049747179
-      GokuProjectile0: 897624079
+      RedLaserShot: -568427246
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

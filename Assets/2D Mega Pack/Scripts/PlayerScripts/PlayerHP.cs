@@ -12,8 +12,16 @@ public class PlayerHP : MonoBehaviour
     public HealthBar healthBar;
     private PlayerMovement PlayerMovement;
     public string deathScene;
+    public bool injured = false;
     [Header("Death Sound")]
     [SerializeField] private AudioClip deathSound;
+
+    [Header("Heal Sound")]
+    [SerializeField] private AudioClip healSound;
+
+    [Header("Injured Sound")]
+    [SerializeField] private AudioClip injuredSound;
+    float adjustedVolume = 5.5f;
 
     public bool isDead = false; // Flag to track whether the player has already died
 
@@ -48,13 +56,16 @@ public class PlayerHP : MonoBehaviour
     void CheckHP()
     {
         // Check if HP is below 50%
-        if (currentHealth <= maxHealth * 0.55f)
+        if (currentHealth <= maxHealth * 0.55f && !injured)
         {
+            injured = true;
             // Set the animator parameter to trigger the injured idle animation
             anim.SetBool("isInjured", true);
+            SoundManager.instance.PlaySound(injuredSound, adjustedVolume);
         }
-        else
+        if(currentHealth >= maxHealth * 0.55f)
         {
+            injured = false;
             // Set the animator parameter to normal idle animation
             anim.SetBool("isInjured", false);
         }
@@ -85,6 +96,7 @@ public class PlayerHP : MonoBehaviour
         // Check if the player's current health is not already at the maximum
         if (currentHealth < maxHealth)
         {
+            
             currentHealth += amount;
 
             // Ensure that healing doesn't exceed the maximum health
@@ -100,5 +112,10 @@ public class PlayerHP : MonoBehaviour
             // Player is already at max health, do not pick up health packs
             Debug.Log("Already at max health, cannot pick up health packs.");
         }
+    }
+
+    public void InjuredSound()
+    {
+        SoundManager.instance.PlaySound(injuredSound, adjustedVolume);
     }
 }

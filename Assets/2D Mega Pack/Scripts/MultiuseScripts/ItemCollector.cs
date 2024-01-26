@@ -5,10 +5,25 @@ using TMPro;
 using UnityEngine.SceneManagement;
 public class ItemCollector : MonoBehaviour
 {
+    public static bool isPoweredUp = false; // Variable to track power-up state
+
+    public Sprite originalSprite;
+    public Sprite poweredUpSprite;
+    public SpriteRenderer projectile;
     public Animator playerAnimator;
     public string nextLevelName;
     public bool secret = false;
     public string secretLevelName;
+
+    [Header("Z Sound")]
+    [SerializeField] private AudioClip zSound;
+// TEST [SerializeField] private AudioClip poweredUpAttackSound;
+   
+
+
+    [Header("Powerup Sound")]
+    [SerializeField] private AudioClip powerupSound;
+
     [SerializeField] private AudioClip tpSound;
 
     [SerializeField] public static int score;
@@ -17,6 +32,7 @@ public class ItemCollector : MonoBehaviour
 
     void Start()
     {
+        projectile.GetComponent<SpriteRenderer>().sprite = originalSprite;
         scoreText.text = "Score: " + score;
     }
 
@@ -30,9 +46,25 @@ public class ItemCollector : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
-    {
+    {  if(Projectile.damage <= 25)
+        {
+            if (collision.gameObject.CompareTag("Powerup"))
+            {
+                Destroy(collision.gameObject);
+                Projectile.damage = Projectile.damage * 2;
+                Debug.Log($"Projectile damage is now: {Projectile.damage}");
+                projectile.GetComponent<SpriteRenderer>().sprite = poweredUpSprite;
+                SoundManager.instance.PlaySound(powerupSound);
+                isPoweredUp = true;
+
+                StartCoroutine (StopDamagePowerup());
+            }  
+        }
+
+
         if (collision.gameObject.CompareTag("Z"))
         {
+            SoundManager.instance.PlaySound(zSound);
             Destroy(collision.gameObject);
             score += 100;
             scoreText.text = "Score: " + score;
@@ -76,6 +108,8 @@ public class ItemCollector : MonoBehaviour
                 
             }
         }
+
+       
     }
 
     void LoadNextLevel()
@@ -101,5 +135,14 @@ public class ItemCollector : MonoBehaviour
             }
         }
         return 0f; // Default to 0 if animation not found
+    }
+
+    IEnumerator StopDamagePowerup()
+    {
+        yield return new WaitForSeconds (10.0f);
+        Projectile.damage = Projectile.damage / 2;
+        isPoweredUp = false;
+        Debug.Log($"Projectile damage is now: {Projectile.damage}");
+        projectile.GetComponent<SpriteRenderer>().sprite = originalSprite;
     }
 }
