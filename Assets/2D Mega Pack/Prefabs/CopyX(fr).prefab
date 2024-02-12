@@ -146,6 +146,8 @@ MonoBehaviour:
   animator: {fileID: 8636837336549029591}
   parent: {fileID: 391743104804656553}
   maxHealth: 85
+  currentHealth: 0
+  deathSound: {fileID: 8300000, guid: 94eed46d141be7a4cb466d9f8a1533e6, type: 3}
 --- !u!61 &3715683309246714307
 BoxCollider2D:
   m_ObjectHideFlags: 0

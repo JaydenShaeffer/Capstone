@@ -249,7 +249,7 @@ MonoBehaviour:
   parent: {fileID: 7554568659389164955}
   maxHealth: 125
   currentHealth: 0
-  deathSound: {fileID: 0}
+  deathSound: {fileID: 8300000, guid: 1c4788083d4ba5b448a31d3a3f134b1d, type: 3}
 --- !u!114 &5151395056194524627
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthAmount: 50
+  healSound: {fileID: 8300000, guid: 71b4ff1b36b792446a6a97efdb58e47f, type: 3}
 --- !u!95 &2981408216901259921
 Animator:
   serializedVersion: 5

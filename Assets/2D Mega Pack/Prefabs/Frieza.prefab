@@ -232,6 +232,8 @@ MonoBehaviour:
   maxHealth: 350
   currentHealth: 350
   healthBar: {fileID: 0}
+  spawnSound: {fileID: 0}
+  deathSound: {fileID: 8300000, guid: 31151bb04ac487b49b5de81c3a56700e, type: 3}
 --- !u!1 &7580999560297634712
 GameObject:
   m_ObjectHideFlags: 0

@@ -253,6 +253,8 @@ MonoBehaviour:
   maxHealth: 800
   currentHealth: 800
   healthBar: {fileID: 0}
+  spawnSound: {fileID: 0}
+  deathSound: {fileID: 8300000, guid: adc340eb7e4689048b403ea7c4aa5bf5, type: 3}
 --- !u!114 &1354960234503722194
 MonoBehaviour:
   m_ObjectHideFlags: 0
