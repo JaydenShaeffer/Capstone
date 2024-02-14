@@ -14,7 +14,7 @@ public class BossHealthbar : MonoBehaviour
 
     [Header("Spawn Sound")]
     [SerializeField] private AudioClip spawnSound;
-    float adjustedVolume = 1.0f;
+    float adjustedVolume = 3.0f;
 
     [Header("Death Sound")]
     [SerializeField] private AudioClip deathSound;
@@ -64,6 +64,11 @@ public class BossHealthbar : MonoBehaviour
     private void SpawnAudio()
     {
         SoundManager.instance.PlaySound(spawnSound);
+    }
+
+     private void GokuBlackSpawnAudio()
+    {
+        SoundManager.instance.PlaySound(spawnSound,adjustedVolume);
     }
 
     private void DeathAudio()
