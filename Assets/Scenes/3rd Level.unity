@@ -877,6 +877,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPatrol (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8020011973958056623, guid: d7c580c97bfb91144bd34b524ad94f1d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1492,7 +1496,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 465699509}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -42.46681, y: -1.41112, z: -10.690447}
+  m_LocalPosition: {x: -44.516808, y: -1.24112, z: -10.690447}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1734,11 +1738,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2925824543300483590, guid: 265d24bf8fdf9eb44b11de3456f1524e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.48
+      value: -4.53
       objectReference: {fileID: 0}
     - target: {fileID: 2925824543300483590, guid: 265d24bf8fdf9eb44b11de3456f1524e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.17
+      value: 1.34
       objectReference: {fileID: 0}
     - target: {fileID: 2925824543300483590, guid: 265d24bf8fdf9eb44b11de3456f1524e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4147,7 +4151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991588523}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -42.46681, y: -1.41112, z: -10.690447}
+  m_LocalPosition: {x: -44.516808, y: -1.24112, z: -10.690447}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -35158,7 +35162,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.3333333, y: 2}
+    oldSize: {x: 2.3555555, y: 2.5555556}
     newSize: {x: 2.6, y: 2.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

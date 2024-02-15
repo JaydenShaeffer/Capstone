@@ -10,10 +10,12 @@ public class DeathScreen : MonoBehaviour
     public void Retry()
     {
         // Reset the currentLevelIndex before loading the main menu scene
-        LevelManager.instance.ResetLevelIndex();
-        
+       // LevelManager.instance.ResetLevelIndex();
+        Debug.Log(LevelManager.currentLevelIndex);
+        LevelManager.currentLevelIndex = LevelManager.currentLevelIndex - 1;
+        LoadingImageChanger.levelCount = LoadingImageChanger.levelCount - 1;
         // Load the MainMenu scene
-        SceneManager.LoadScene(mainMenuScene);
+        SceneManager.LoadScene(LevelManager.currentLevelIndex);
     }
 
     public void QuitGame()

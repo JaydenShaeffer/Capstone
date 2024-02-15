@@ -555,17 +555,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: HealthPack (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5512779574945988164, guid: cc689332d7c0f4241aa381de9a07ae44, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -483969944, guid: cdb9a606b0ab57c4ea4fa1b1c5699e81, type: 3}
     - target: {fileID: 6279364734693518915, guid: cc689332d7c0f4241aa381de9a07ae44, type: 3}
       propertyPath: m_RootOrder
       value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 6279364734693518915, guid: cc689332d7c0f4241aa381de9a07ae44, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -39.05
+      value: -29.83
       objectReference: {fileID: 0}
     - target: {fileID: 6279364734693518915, guid: cc689332d7c0f4241aa381de9a07ae44, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.62
+      value: 0.37
       objectReference: {fileID: 0}
     - target: {fileID: 6279364734693518915, guid: cc689332d7c0f4241aa381de9a07ae44, type: 3}
       propertyPath: m_LocalPosition.z
