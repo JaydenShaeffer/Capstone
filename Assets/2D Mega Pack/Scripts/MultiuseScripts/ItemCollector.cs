@@ -21,8 +21,9 @@ public class ItemCollector : MonoBehaviour
    
 
 
-    [Header("Powerup Sound")]
+    [Header("Powerup Sounds")]
     [SerializeField] private AudioClip powerupSound;
+    [SerializeField] private AudioClip shieldSound;
 
     [SerializeField] private AudioClip tpSound;
 
@@ -61,6 +62,19 @@ public class ItemCollector : MonoBehaviour
             }  
         }
 
+        if(PlayerHP.shield == false)
+        {
+             if (collision.gameObject.CompareTag("ShieldPowerup"))
+            {
+                Destroy(collision.gameObject);
+                PlayerHP.shield = true;
+                Debug.Log($"You have a shield {PlayerHP.shield}");
+                SoundManager.instance.PlaySound(shieldSound);
+            }
+        }
+           
+        
+
 
         if (collision.gameObject.CompareTag("Z"))
         {
@@ -75,10 +89,15 @@ public class ItemCollector : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("NextLevel"))
         {
+            if(isPoweredUp == true)
+            {
+                Projectile.damage = Projectile.damage / 2;
+                isPoweredUp = false;
+            }
             // Play transition animation
             playerAnimator.SetTrigger("End");
             SoundManager.instance.PlaySound(tpSound);
-
+            PlayerHP.shield = false;
             
 
             if (secret = true)

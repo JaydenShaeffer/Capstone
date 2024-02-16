@@ -64,6 +64,13 @@ public class RangedAttack2 : MonoBehaviour
         fireballs[FindFireball()].GetComponent<EnemyProjectile>().ActivateProjectile();
     }
 
+     private void RangedAttackNoMove2()
+    {
+        cooldownTimer = 0;
+        fireballs[FindFireball()].transform.position = firepoint.position;
+        fireballs[FindFireball()].GetComponent<EnemyProjectileNoMove>().ActivateProjectile(); 
+    }
+
     private int FindFireball()
     {
         for (int i = 0; i < fireballs.Length; i++)

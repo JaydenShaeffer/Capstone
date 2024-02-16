@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHP : MonoBehaviour
 {
-    public bool shield;
+    [SerializeField] public static bool shield = false;
     public int maxHealth = 100;
     public int currentHealth;
     private Animator anim;
@@ -44,8 +44,9 @@ public class PlayerHP : MonoBehaviour
     {   
         if (!isDead && shield == true) // Check if the player is already dead
         {
-            currentHealth -= damage;
-            healthBar.SetHealth(currentHealth);
+            shield = false;
+            Debug.Log("Shield lost");
+          
         }
         
         else if (!isDead && shield == false) // Check if the player is already dead

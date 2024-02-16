@@ -364,6 +364,7 @@ MonoBehaviour:
   secretLevelName: SecretLoadingScreen
   zSound: {fileID: 8300000, guid: 6e2efcc2b967609488d1e7bca758a07a, type: 3}
   powerupSound: {fileID: 8300000, guid: 3dc2d29aae7673c4d94f803cb3e56330, type: 3}
+  shieldSound: {fileID: 8300000, guid: 2fd97193875a0f643be2147566d65785, type: 3}
   tpSound: {fileID: 8300000, guid: 69d4c6a6b53e34d4095d1c72d5024a58, type: 3}
   scoreText: {fileID: 0}
 --- !u!114 &1196702144474428109
