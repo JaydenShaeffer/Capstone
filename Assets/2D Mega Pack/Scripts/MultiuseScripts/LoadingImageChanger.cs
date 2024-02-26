@@ -11,6 +11,7 @@ public class LoadingImageChanger : MonoBehaviour
     public Sprite bossTwo;
     public Sprite levelThree;
     public Sprite bossThree;
+    public Sprite levelFour;
     public Sprite bossFour;
     public Image backGround;
     public LevelManager levelManager;
@@ -56,6 +57,11 @@ public class LoadingImageChanger : MonoBehaviour
             
         }
          if (levelCount == 7)
+        {
+            backGround.GetComponent<Image>().sprite = levelFour;
+            
+        }
+         if (levelCount == 8)
         {
             backGround.GetComponent<Image>().sprite = bossFour;
             
