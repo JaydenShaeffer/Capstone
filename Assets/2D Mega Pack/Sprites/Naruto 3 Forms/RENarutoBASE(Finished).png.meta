@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3d4e32d936f526249a397ca436d1f1f6
+guid: f82a3bfad1b221348b46c714850b572f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 19
+  spritePixelsToUnits: 14
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -149,97 +149,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Slash0
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 2693
-        width: 64
-        height: 54
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ad84de9b8fed3c4f9014485f77dc6a3
-      internalID: 135423119
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slash1
-      rect:
-        serializedVersion: 2
-        x: 108
-        y: 2693
-        width: 78
-        height: 46
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f741bcf554e2b1d48a5b9806b688f722
-      internalID: -1310045707
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slash2
-      rect:
-        serializedVersion: 2
-        x: 217
-        y: 2694
-        width: 78
-        height: 46
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2323ecdab22def748ae473761a2edbf1
-      internalID: 665160032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slash3
-      rect:
-        serializedVersion: 2
-        x: 335
-        y: 2694
-        width: 64
-        height: 51
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93a2effdfdc7db34e991886b427d4afd
-      internalID: -2091307048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Run0
+      name: Punch0
       rect:
         serializedVersion: 2
         x: 0
-        y: 2404
-        width: 65
-        height: 45
+        y: 1843
+        width: 31
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,19 +163,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f30c10d277c5ee49833d3cf9f47409f
-      internalID: 1673039363
+      spriteID: 750b2c3ea15068a4fa5839de3697c0a4
+      internalID: -1990710903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Run1
+      name: Punch1
       rect:
         serializedVersion: 2
-        x: 78
-        y: 2409
-        width: 72
+        x: 51
+        y: 1844
+        width: 39
         height: 38
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -268,8 +184,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc7eb02c4138fcc4690090a737983a0d
-      internalID: 1191551878
+      spriteID: 1ac8d151bcb65534dbd6a1b474c6ebe9
+      internalID: 1396036784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Punch2
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1844
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb7d527af5fcb9418bb7420809021c9
+      internalID: -1822196981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Punch3
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 1844
+        width: 36
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f8ba0f2653f9446b88280058c54970
+      internalID: 1233062075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1632
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817fcd7b98aed864c8b600b51b432cc9
+      internalID: -1114977268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Run1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1636
+        width: 41
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bef02a0ed96b06458421fa913bfaa35
+      internalID: 1004042433
       vertices: []
       indices: 
       edges: []
@@ -278,10 +278,10 @@ TextureImporter:
       name: Run2
       rect:
         serializedVersion: 2
-        x: 163
-        y: 2405
-        width: 66
-        height: 43
+        x: 103
+        y: 1633
+        width: 37
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,8 +289,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cee455aff0d3c354d86ddb0d5ea1fa44
-      internalID: -92255881
+      spriteID: 908f68d94af3949448d4dc2c4424b867
+      internalID: -866844031
       vertices: []
       indices: 
       edges: []
@@ -299,10 +299,10 @@ TextureImporter:
       name: Run3
       rect:
         serializedVersion: 2
-        x: 242
-        y: 2406
-        width: 67
-        height: 41
+        x: 159
+        y: 1634
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,8 +310,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66c05bfbf32143540b8f1392a326984e
-      internalID: -550509645
+      spriteID: 671bd947a6f1d2744810f75d0663b9cd
+      internalID: 54629984
       vertices: []
       indices: 
       edges: []
@@ -320,10 +320,10 @@ TextureImporter:
       name: Run4
       rect:
         serializedVersion: 2
-        x: 325
-        y: 2409
-        width: 70
-        height: 42
+        x: 201
+        y: 1636
+        width: 42
+        height: 31
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,8 +331,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2faa5cf37e9cfa439b89fad8dc7c806
-      internalID: -1363498606
+      spriteID: ea20016e701192a4199cc7dc3e4a984e
+      internalID: -9696001
       vertices: []
       indices: 
       edges: []
@@ -341,10 +341,10 @@ TextureImporter:
       name: Run5
       rect:
         serializedVersion: 2
-        x: 405
-        y: 2404
-        width: 70
-        height: 45
+        x: 253
+        y: 1631
+        width: 39
+        height: 35
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,8 +352,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27bb0121b96244641a63a0a5dc2298c0
-      internalID: -1193184319
+      spriteID: 7949a16a2aa493646bc7ed4ae890c6d6
+      internalID: -263914519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1332
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e53d02ce62d4e24abad3c32d1d9a8bc
+      internalID: 561575666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1332
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ea56c7235cef540a92352e44c00782
+      internalID: 951534244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead2
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1257
+        width: 39
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f82dd6ba91ffb489b9ec3f2ab322db
+      internalID: 1151105448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead3
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1251
+        width: 40
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924aeb019656cac45b0107dfca980adf
+      internalID: 1525298697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead4
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 1248
+        width: 42
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8fb57e8648f4b0469c1c284cd4fb2fb
+      internalID: -2075763813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead5
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 1250
+        width: 41
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c2f6ce07333d3448bafb34062e360d
+      internalID: 648217121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead6
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1245
+        width: 42
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63517fd272c78494994c642a809f1983
+      internalID: -1420215516
       vertices: []
       indices: 
       edges: []
@@ -362,10 +509,10 @@ TextureImporter:
       name: Idle0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 2068
-        width: 60
-        height: 52
+        x: 0
+        y: 1382
+        width: 29
+        height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,8 +520,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8467e07c4fa1e54bb4931fa6b53a261
-      internalID: 302235075
+      spriteID: cc6644c13fac4fa47921565a1171e99b
+      internalID: 1113785461
       vertices: []
       indices: 
       edges: []
@@ -383,10 +530,10 @@ TextureImporter:
       name: Idle1
       rect:
         serializedVersion: 2
-        x: 77
-        y: 2067
-        width: 59
-        height: 53
+        x: 34
+        y: 1382
+        width: 29
+        height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,8 +541,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 183de63d8ccbc004291692d10715d4d8
-      internalID: 441684743
+      spriteID: 8b6618929257bdf40940a0a20f96f713
+      internalID: 2001551545
       vertices: []
       indices: 
       edges: []
@@ -404,10 +551,10 @@ TextureImporter:
       name: Idle2
       rect:
         serializedVersion: 2
-        x: 150
-        y: 2067
-        width: 60
-        height: 54
+        x: 68
+        y: 1382
+        width: 30
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -415,8 +562,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6909c71752788f438b09c1750996136
-      internalID: 1919115833
+      spriteID: c4667675bce15404eb6a8d74d7a1e090
+      internalID: -147986196
       vertices: []
       indices: 
       edges: []
@@ -425,10 +572,10 @@ TextureImporter:
       name: Idle3
       rect:
         serializedVersion: 2
-        x: 223
-        y: 2067
-        width: 61
-        height: 55
+        x: 102
+        y: 1382
+        width: 30
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -436,8 +583,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07919657781089243839886b256f7f21
-      internalID: -1112596614
+      spriteID: 93bffe38c28c7014b801dde9d2eb566c
+      internalID: 1293767819
       vertices: []
       indices: 
       edges: []
@@ -446,10 +593,10 @@ TextureImporter:
       name: Idle4
       rect:
         serializedVersion: 2
-        x: 298
-        y: 2067
-        width: 61
-        height: 54
+        x: 136
+        y: 1382
+        width: 30
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,8 +604,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56c16aeb83e5f1b438c3d9bf46d95fd4
-      internalID: -994172054
+      spriteID: 3421f87331a104a4e860fab062f91f20
+      internalID: -1261636924
       vertices: []
       indices: 
       edges: []
@@ -467,10 +614,10 @@ TextureImporter:
       name: Idle5
       rect:
         serializedVersion: 2
-        x: 373
-        y: 2067
-        width: 60
-        height: 51
+        x: 170
+        y: 1382
+        width: 29
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,20 +625,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68202c45f693e424597cfead6e8eea6e
-      internalID: 493134910
+      spriteID: ba8551f480f2ecd4bb6e288ca730b63e
+      internalID: 954240698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Idle6
+      name: Teleport0
       rect:
         serializedVersion: 2
-        x: 447
-        y: 2067
-        width: 59
-        height: 52
+        x: 3
+        y: 1431
+        width: 26
+        height: 41
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -499,20 +646,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 012be46f801b27b4cb541531104eba64
-      internalID: 571968885
+      spriteID: 51a072bec06aa814f81ae09b20249f63
+      internalID: 457116028
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death0
+      name: Teleport1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2003
-        width: 49
-        height: 52
+        x: 38
+        y: 1431
+        width: 26
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -520,20 +667,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ed06095af815444faea2673df44060d
-      internalID: -600907484
+      spriteID: 27d790df5797d7a4eb6789d6eb1b5132
+      internalID: -63012585
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death1
+      name: Teleport2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 2003
-        width: 55
-        height: 49
+        x: 72
+        y: 1432
+        width: 27
+        height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -541,229 +688,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22d1174c1deeca64dac6edd72bc9917c
-      internalID: -1350182168
+      spriteID: 991994f1b9968fc41b85775988584978
+      internalID: 610410371
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death2
+      name: Teleport3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1944
-        width: 54
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4507f73ffdd82f148baec51e01144c71
-      internalID: -738108885
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Death3
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 1875
-        width: 46
-        height: 35
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5434ff7b2659403459c317f116e6a3d6
-      internalID: -7606901
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Death4
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 1867
-        width: 46
-        height: 35
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ff7fd9a446f4cd04882ee68aa1290afd
-      internalID: -169514403
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Death5
-      rect:
-        serializedVersion: 2
-        x: 143
-        y: 1862
-        width: 68
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5591773006fed7a4580678f6f0f7e730
-      internalID: 1347745431
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Death6
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 1866
-        width: 46
-        height: 35
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be3ee566c3285ac49951fff22eb5f402
-      internalID: -1313991500
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Death7
-      rect:
-        serializedVersion: 2
-        x: 291
-        y: 1860
-        width: 68
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a94ad3a22b80c40499eb86b94711b2b2
-      internalID: -1768910127
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HandRangedAttack0
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 1144
-        width: 65
-        height: 52
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eac5544fb05a9654498120e3184925e9
-      internalID: 1784398664
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HandRangedAttack1
-      rect:
-        serializedVersion: 2
-        x: 220
-        y: 1144
-        width: 72
-        height: 49
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5bcbf489f2fae764cbfe2c7d079e182f
-      internalID: 1371497986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HandRangedAttack2
-      rect:
-        serializedVersion: 2
-        x: 421
-        y: 1144
-        width: 66
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d0a3e010a1f36824086441bbdab84205
-      internalID: -1512652922
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HandRangedAttack3
-      rect:
-        serializedVersion: 2
-        x: 616
-        y: 1144
-        width: 66
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 23c027331d56c5a4399be8d0475873f5
-      internalID: 2041785448
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: HandRangedAttack4
-      rect:
-        serializedVersion: 2
-        x: 810
-        y: 1144
-        width: 69
+        x: 107
+        y: 1432
+        width: 26
         height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -772,20 +709,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0245c6d0b241cb648843e8192a9abe9a
-      internalID: 2135626617
+      spriteID: 8e23541251f5e304f81fae34ef0b5b80
+      internalID: 2037431360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: HandRangedAttack5
+      name: RangedProjectile0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 1006
-        width: 71
-        height: 45
+        x: 5
+        y: 549
+        width: 40
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -793,377 +730,377 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36e3237a5d098b948aec9b524b314583
-      internalID: -149318098
+      spriteID: 01cdc07297f016d45878708de1e882cf
+      internalID: -938997938
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hand0
+      name: RangedProjectile1
       rect:
         serializedVersion: 2
-        x: 228
-        y: 1007
-        width: 63
-        height: 63
+        x: 57
+        y: 549
+        width: 44
+        height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ecf91f428312c944b7a6049b012d49e
-      internalID: 2140769193
+      spriteID: 885028cab5791df438a9d33fbdcd2ed4
+      internalID: 942443231
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hand1
+      name: RangedProjectile2
       rect:
         serializedVersion: 2
-        x: 423
-        y: 1007
-        width: 63
-        height: 72
+        x: 108
+        y: 549
+        width: 40
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc0880dd9a1bd67408da39b590c02cd4
-      internalID: -1021794252
+      spriteID: ff8888dc3672b9a4d9ce0eee186103cb
+      internalID: -835030552
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hand2
+      name: RangedProjectile3
       rect:
         serializedVersion: 2
-        x: 618
-        y: 1007
-        width: 63
-        height: 72
+        x: 160
+        y: 549
+        width: 41
+        height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e13c5c317949ff841b20752c26cbd6b8
-      internalID: 400749214
+      spriteID: 43f0bd20b5f0d814199a42d513af9cea
+      internalID: -1451336117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hand3
+      name: RangedProjectile4
       rect:
         serializedVersion: 2
-        x: 801
-        y: 1007
-        width: 75
-        height: 92
+        x: 212
+        y: 549
+        width: 43
+        height: 43
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d07f6043298ae34c93fc59cdeaedbeb
-      internalID: 680224482
+      spriteID: fb52d260926d8dd41acb5aa7d8e2a23c
+      internalID: 1900756314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hand4
+      name: RangedProjectile5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 865
-        width: 85
-        height: 81
+        x: 264
+        y: 549
+        width: 42
+        height: 39
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f82e0fa5b4444924db01208001cd63d2
-      internalID: 1758155969
+      spriteID: 4a307cfc80e1bdf42826ad30d307ff29
+      internalID: -1307665813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hand5
+      name: RangedProjectile6
       rect:
         serializedVersion: 2
-        x: 189
-        y: 863
-        width: 93
-        height: 74
+        x: 3
+        y: 498
+        width: 27
+        height: 37
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38c903ee08c665243ab29cfd77bce4cc
-      internalID: -1415757553
+      spriteID: 9eb318c0a4853f14d94a1efb33932d73
+      internalID: -1858754299
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hand6
+      name: RangedProjectile7
       rect:
         serializedVersion: 2
-        x: 391
-        y: 865
-        width: 92
-        height: 81
+        x: 37
+        y: 497
+        width: 26
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7370cdae134acd4a97c592f4702abaf
-      internalID: -1192532860
+      spriteID: 8ab2df6474c554f40abea2d986f94b4d
+      internalID: -1065967441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hand7
+      name: RangedProjectile8
       rect:
         serializedVersion: 2
-        x: 636
-        y: 861
-        width: 64
-        height: 99
+        x: 16
+        y: 448
+        width: 29
+        height: 37
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 683f3daafae93e4459da527508f6f2ec
-      internalID: -1913550824
+      spriteID: de3c5df9aa6bdd04888557710d436b14
+      internalID: 1859060691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Hand8
+      name: RangedProjectile9
       rect:
         serializedVersion: 2
-        x: 845
-        y: 854
-        width: 111
-        height: 124
+        x: 64
+        y: 448
+        width: 31
+        height: 37
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73c0cbc99639be942b3367fdb4591f01
-      internalID: 886149155
+      spriteID: c298c722bdc22914599ba7f708b7f67c
+      internalID: -1102579626
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpiritBomb0
+      name: RangedProjectile10
       rect:
         serializedVersion: 2
-        x: 23
-        y: 316
-        width: 61
-        height: 58
+        x: 116
+        y: 448
+        width: 29
+        height: 37
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9538b495187cc0d429ff0ff3261287cc
-      internalID: -1345631604
+      spriteID: 69bc6313882a7ab498b17912b10e29de
+      internalID: 1741722160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpiritBomb1
+      name: RangedProjectile11
       rect:
         serializedVersion: 2
-        x: 218
-        y: 316
-        width: 62
-        height: 55
+        x: 158
+        y: 448
+        width: 37
+        height: 41
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a98adecdc11eddd48862556058de60da
-      internalID: -1702590365
+      spriteID: d7524a67131abfb46b440690aca0602b
+      internalID: -881520724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpiritBomb2
+      name: RangedProjectile12
       rect:
         serializedVersion: 2
-        x: 414
-        y: 316
-        width: 59
-        height: 55
+        x: 209
+        y: 448
+        width: 38
+        height: 41
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0949a61872832346a0ef4df84f9e1b1
-      internalID: 1143127681
+      spriteID: ed1a508980b821a48a1848fe9d813a9b
+      internalID: 2124704799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpiritBomb3
+      name: RangedProjectile13
       rect:
         serializedVersion: 2
-        x: 611
-        y: 316
-        width: 57
-        height: 56
+        x: 254
+        y: 448
+        width: 41
+        height: 37
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 895b11a2d639de540a0da3708c3b2b2a
-      internalID: 407379317
+      spriteID: fbe6c7a8bdff3644ba0d228817d45094
+      internalID: -7380746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Explosion0
+      name: RangedProjectile14
       rect:
         serializedVersion: 2
-        x: 7
-        y: 144
-        width: 155
-        height: 136
+        x: 2
+        y: 396
+        width: 42
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c77427054b850d42b0c2b4a83984f95
-      internalID: 1307933226
+      spriteID: 386ba0796263a2f42aec84cf23299c63
+      internalID: 1360586961
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Explosion1
+      name: RangedProjectile15
       rect:
         serializedVersion: 2
-        x: 181
-        y: 144
-        width: 164
-        height: 136
+        x: 91
+        y: 396
+        width: 39
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00dadc185e67d7b4d934d744b3a4d0c1
-      internalID: 1666170551
+      spriteID: 5cc3a612750c2a946bde5e180fdf12eb
+      internalID: -1866585160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Explosion2
+      name: RangedProjectile16
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 396
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b5a8f9538912c49ad40f502401555f
+      internalID: 1697667239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedProjectile17
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 396
+        width: 36
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f062a0bb9c271b94898555b23da7f096
+      internalID: -1470748415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RangedProjectile18
       rect:
         serializedVersion: 2
         x: 359
-        y: 146
-        width: 166
-        height: 140
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b07f8c646302bc948b8760d03fa98762
-      internalID: -377006006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Explosion3
-      rect:
-        serializedVersion: 2
-        x: 541
-        y: 142
-        width: 155
-        height: 130
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85bf5b1dc0f5ad04fac06b360d81b9d3
-      internalID: 1509767071
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Powerup0
-      rect:
-        serializedVersion: 2
-        x: 14
-        y: 1530
-        width: 58
-        height: 51
+        y: 396
+        width: 35
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1171,20 +1108,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cc462f66e6944d4b9f5aba3fb506227
-      internalID: -1795404082
+      spriteID: 5e78af5b2f98f844a9a6fc77182fb74f
+      internalID: -1705486648
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Powerup1
+      name: RangedProjectile19
       rect:
         serializedVersion: 2
-        x: 100
-        y: 1530
-        width: 51
-        height: 53
+        x: 445
+        y: 395
+        width: 32
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1192,20 +1129,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9984b01646276ef479c32da95a503bbc
-      internalID: 848711639
+      spriteID: 894da0e74970fd74e90638b98f28ce21
+      internalID: -1267321406
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Powerup2
+      name: RangedProjectile20
       rect:
         serializedVersion: 2
-        x: 169
-        y: 1530
-        width: 64
-        height: 50
+        x: 531
+        y: 395
+        width: 46
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1213,20 +1150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 583a77338d1fe714a8629b21f7d58409
-      internalID: -1572019844
+      spriteID: bd799e210c359bb40a60c64fadc7b1e1
+      internalID: 1718842893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Powerup3
+      name: RangedProjectile21
       rect:
         serializedVersion: 2
-        x: 247
-        y: 1530
-        width: 67
-        height: 53
+        x: 616
+        y: 395
+        width: 62
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1234,71 +1171,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94786168764d3974ab8fd6334cf942ac
-      internalID: 1237581204
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Powerup4
-      rect:
-        serializedVersion: 2
-        x: 332
-        y: 1530
-        width: 65
-        height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3274ed234716b174ea1d99b51ec8e0b2
-      internalID: -1421789180
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Powerup5
-      rect:
-        serializedVersion: 2
-        x: 415
-        y: 1530
-        width: 63
-        height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5272174fa3a915e4795982fcf60cb521
-      internalID: -366407545
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Powerup6
-      rect:
-        serializedVersion: 2
-        x: 494
-        y: 1530
-        width: 65
-        height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f6daeb98dcccba47a089173eaaeae22
-      internalID: -1231021797
+      spriteID: c8a456fab5861f94abf954bb52322c95
+      internalID: 1290021000
       vertices: []
       indices: 
       edges: []
@@ -1314,61 +1188,56 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Death0: -600907484
-      Death1: -1350182168
-      Death2: -738108885
-      Death3: -7606901
-      Death4: -169514403
-      Death5: 1347745431
-      Death6: -1313991500
-      Death7: -1768910127
-      Explosion0: 1307933226
-      Explosion1: 1666170551
-      Explosion2: -377006006
-      Explosion3: 1509767071
-      Hand0: 2140769193
-      Hand1: -1021794252
-      Hand2: 400749214
-      Hand3: 680224482
-      Hand4: 1758155969
-      Hand5: -1415757553
-      Hand6: -1192532860
-      Hand7: -1913550824
-      Hand8: 886149155
-      HandRangedAttack0: 1784398664
-      HandRangedAttack1: 1371497986
-      HandRangedAttack2: -1512652922
-      HandRangedAttack3: 2041785448
-      HandRangedAttack4: 2135626617
-      HandRangedAttack5: -149318098
-      Idle0: 302235075
-      Idle1: 441684743
-      Idle2: 1919115833
-      Idle3: -1112596614
-      Idle4: -994172054
-      Idle5: 493134910
-      Idle6: 571968885
-      Powerup0: -1795404082
-      Powerup1: 848711639
-      Powerup2: -1572019844
-      Powerup3: 1237581204
-      Powerup4: -1421789180
-      Powerup5: -366407545
-      Powerup6: -1231021797
-      Run0: 1673039363
-      Run1: 1191551878
-      Run2: -92255881
-      Run3: -550509645
-      Run4: -1363498606
-      Run5: -1193184319
-      Slash0: 135423119
-      Slash1: -1310045707
-      Slash2: 665160032
-      Slash3: -2091307048
-      SpiritBomb0: -1345631604
-      SpiritBomb1: -1702590365
-      SpiritBomb2: 1143127681
-      SpiritBomb3: 407379317
+      Dead0: 561575666
+      Dead1: 951534244
+      Dead2: 1151105448
+      Dead3: 1525298697
+      Dead4: -2075763813
+      Dead5: 648217121
+      Dead6: -1420215516
+      Idle0: 1113785461
+      Idle1: 2001551545
+      Idle2: -147986196
+      Idle3: 1293767819
+      Idle4: -1261636924
+      Idle5: 954240698
+      Punch0: -1990710903
+      Punch1: 1396036784
+      Punch2: -1822196981
+      Punch3: 1233062075
+      RENarutoBASE(Finished)_0: 1840611953
+      RangedProjectile0: -938997938
+      RangedProjectile1: 942443231
+      RangedProjectile10: 1741722160
+      RangedProjectile11: -881520724
+      RangedProjectile12: 2124704799
+      RangedProjectile13: -7380746
+      RangedProjectile14: 1360586961
+      RangedProjectile15: -1866585160
+      RangedProjectile16: 1697667239
+      RangedProjectile17: -1470748415
+      RangedProjectile18: -1705486648
+      RangedProjectile19: -1267321406
+      RangedProjectile2: -835030552
+      RangedProjectile20: 1718842893
+      RangedProjectile21: 1290021000
+      RangedProjectile3: -1451336117
+      RangedProjectile4: 1900756314
+      RangedProjectile5: -1307665813
+      RangedProjectile6: -1858754299
+      RangedProjectile7: -1065967441
+      RangedProjectile8: 1859060691
+      RangedProjectile9: -1102579626
+      Run0: -1114977268
+      Run1: 1004042433
+      Run2: -866844031
+      Run3: 54629984
+      Run4: -9696001
+      Run5: -263914519
+      Teleport0: 457116028
+      Teleport1: -63012585
+      Teleport2: 610410371
+      Teleport3: 2037431360
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
