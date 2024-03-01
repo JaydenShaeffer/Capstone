@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 19
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1144,7 +1144,7 @@ TextureImporter:
         width: 71
         height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1152,6 +1152,69 @@ TextureImporter:
       bones: []
       spriteID: b602eff1b4f00fc4da0b6b8388375e8b
       internalID: 1287471533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spawn0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 3119
+        width: 80
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d293723cbaa5b034e9f074a9cce18f09
+      internalID: -182592040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spawn2
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 3119
+        width: 77
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b505e4f77d33044896f8429b3a9f3d5
+      internalID: 784733859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spawn3
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 3113
+        width: 79
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad95b007d2eb884a9a590494a580e85
+      internalID: -355965609
       vertices: []
       indices: 
       edges: []
@@ -1215,6 +1278,9 @@ TextureImporter:
       Slash7: -860393386
       Slash8: 838658936
       Slash9: 1949191425
+      Spawn0: -182592040
+      Spawn2: 784733859
+      Spawn3: -355965609
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -245,7 +245,7 @@ MonoBehaviour:
   jumpSound: {fileID: 8300000, guid: f23ca1dc6b6701147829205b6522f57a, type: 3}
   initialDelay: 1
   knockbackForce: 8
-  runspeed: 20
+  runspeed: 8
   _IsFacingRight: 1
   jumpForce: 10
   _isJumping: 0

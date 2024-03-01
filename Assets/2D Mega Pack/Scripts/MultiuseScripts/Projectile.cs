@@ -6,7 +6,7 @@ public class Projectile : MonoBehaviour
 {
    // public Sprite originalSprite;
   //  public Sprite poweredUpSprite;
-    public static int damage = 9999;
+    public static int damage = 25;
     public float moveSpeed = 5.0f; // Adjust the speed as needed
     public GameObject projectile;
     Rigidbody2D rb;

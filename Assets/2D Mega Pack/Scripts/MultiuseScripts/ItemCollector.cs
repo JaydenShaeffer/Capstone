@@ -39,7 +39,7 @@ public class ItemCollector : MonoBehaviour
 
     void Update()
     {
-        if (score >= 1300)
+        if (score >= 1600)
         {
             LevelManager.secretStuck = true;
             secret = true;
@@ -102,7 +102,7 @@ public class ItemCollector : MonoBehaviour
 
             if (secret = true)
             {
-                if (score <= 1200 && LevelManager.secretStuck == false)
+                if (score <= 1500 && LevelManager.secretStuck == false)
                 {
                     Debug.Log("I am addicted - jeff");
                     // Invoke the LoadNextLevel function after the animation duration
