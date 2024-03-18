@@ -1,81 +1,60 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MultiBossHealthBar : MonoBehaviour
 {
-    public Animator animator;
-   
-    [SerializeField] private GameObject parent;
-    [SerializeField] private GameObject[] enemies; // Array to hold the two enemies
-    public int maxHealth = 600;
-    public int currentHealth;
-    private DropKey dropKey;
-    public HealthBar healthBar;
+    public Slider slider;
+    public Gradient gradient;
+    public Image fill;
+    public MultiBossHealthBarHealthBar enemy1;
+    public MultiBossHealthBarHealthBar enemy2;
+    public Image healthBarFill;
+  //  private float combinedHealth;
+    private float maxCombinedHealth;
 
-    [Header("Spawn Sound")]
-    [SerializeField] private AudioClip spawnSound;
-    float adjustedVolume = 1.0f;
-
-
-    // Start is called before the first frame update
     void Start()
-    {
-        currentHealth = maxHealth;
-        dropKey = GetComponent<DropKey>(); // Get the DropKey script
-        
-        healthBar.SetMaxHealth(maxHealth);
-    }
-
-    public void Destroy()
-    {
-        Destroy(parent);
-    }
-
-    // Update is called once per frame
-    public void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
-         // Check if any of the enemies are still alive
-        if (currentHealth <= 0 && !IsAnyEnemyAlive())
         {
-            Die();
+            Debug.Log("MultiBossHealthBar Start method called");
+            // Calculate the combined max health
+            maxCombinedHealth = enemy1.maxHealth + enemy2.maxHealth;
+
+            SetMaxHealth((int)maxCombinedHealth);
+            // Update the health bar initially
+           // UpdateHealthBar();
         }
-    }
 
-
-     bool IsAnyEnemyAlive()
-     {
-        foreach (GameObject enemy in enemies)
+        void Update()
         {
-            BossHealthbar enemyHealth = enemy.GetComponent<BossHealthbar>();
-            if (enemyHealth != null && enemyHealth.currentHealth > 0)
-            {
-                return true;
-            }
+            // Calculate the combined health
+           float combinedHealth = enemy1.currentHealth + enemy2.currentHealth;
+
+            // Update the health bar
+           SetHealth((int)combinedHealth);
         }
-        return false;
-     }
 
-    void Die()
+        void UpdateHealthBar(float combinedHealth)
+        {
+        // Set the health bar value
+        SetHealth((int)combinedHealth);
+        }
+    
+    public void SetMaxHealth(int health)
     {
-        Debug.Log("Enemy Died!");
-        StartCoroutine(DieFr());
-        // Call the DropKeyOnDeath method to drop the key
-        dropKey.DropKeyOnDeath();
+        slider.maxValue = health;
+        slider.value = health;
+
+        fill.color = gradient.Evaluate(1f);
+    }
+    
+    public void SetHealth(int health)
+    {
+        slider.value = health;
+
+        fill.color = gradient.Evaluate(slider.normalizedValue);
     }
 
-    IEnumerator DieFr()
-    {
-        animator.SetTrigger("Dead");
-        yield return new WaitForSeconds(1);
-        //Destroy(gameObject);
-    }
 
-    private void SpawnAudio()
-    {
-        SoundManager.instance.PlaySound(spawnSound);
-    }
 
 }
