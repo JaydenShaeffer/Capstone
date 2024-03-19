@@ -39,7 +39,7 @@ public class ItemCollector : MonoBehaviour
 
     void Update()
     {
-        if (score >= 1600)
+        if (score >= 1800)
         {
             LevelManager.secretStuck = true;
             secret = true;
@@ -52,7 +52,7 @@ public class ItemCollector : MonoBehaviour
             if (collision.gameObject.CompareTag("Powerup"))
             {
                 Destroy(collision.gameObject);
-                Projectile.damage = Projectile.damage * 2;
+                Projectile.damage = Projectile.powerDamage ;
                 Debug.Log($"Projectile damage is now: {Projectile.damage}");
                 projectile.GetComponent<SpriteRenderer>().sprite = poweredUpSprite;
                 SoundManager.instance.PlaySound(powerupSound);
@@ -91,7 +91,7 @@ public class ItemCollector : MonoBehaviour
         {
             if(isPoweredUp == true)
             {
-                Projectile.damage = Projectile.damage / 2;
+                Projectile.damage = Projectile.defaultDMG;
                 isPoweredUp = false;
             }
             // Play transition animation
@@ -159,7 +159,7 @@ public class ItemCollector : MonoBehaviour
     IEnumerator StopDamagePowerup()
     {
         yield return new WaitForSeconds (10.0f);
-        Projectile.damage = Projectile.damage / 2;
+        Projectile.damage = Projectile.defaultDMG;
         isPoweredUp = false;
         Debug.Log($"Projectile damage is now: {Projectile.damage}");
         projectile.GetComponent<SpriteRenderer>().sprite = originalSprite;

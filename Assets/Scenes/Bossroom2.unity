@@ -28214,11 +28214,11 @@ PrefabInstance:
       objectReference: {fileID: 462728437}
     - target: {fileID: 216513711040178708, guid: fe5d0a31fe8811341a16cd0d5b279e72, type: 3}
       propertyPath: maxHealth
-      value: 800
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 216513711040178708, guid: fe5d0a31fe8811341a16cd0d5b279e72, type: 3}
       propertyPath: currentHealth
-      value: 800
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 892084349451294440, guid: fe5d0a31fe8811341a16cd0d5b279e72, type: 3}
       propertyPath: range

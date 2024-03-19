@@ -24,6 +24,7 @@ public class Attack : MonoBehaviour
     {
         Enemy enemy = collision.GetComponent<Enemy>();
         BossHealthbar bossHP = collision.GetComponent<BossHealthbar>();
+        MultiBossHealthBarHealthBar multibossHP = collision.GetComponent<MultiBossHealthBarHealthBar>();
         if (enemy != null)
         {
             enemy.TakeDamage(attackDMG);
@@ -32,6 +33,11 @@ public class Attack : MonoBehaviour
         else if (bossHP != null)
         {
             bossHP.TakeDamage(attackDMG);
+            Debug.Log($"Enemy hit for {attackDMG}");
+        }
+        else if (multibossHP != null)
+        {
+            multibossHP.TakeDamage(attackDMG);
             Debug.Log($"Enemy hit for {attackDMG}");
         }
     }

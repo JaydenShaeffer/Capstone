@@ -442,6 +442,7 @@ MonoBehaviour:
   - Bossroom4
   - 5th Level
   - Bossroom5
+  - 6th Level
   itemCollector: {fileID: 1812407348}
 --- !u!4 &520291492
 Transform:
@@ -1330,6 +1331,7 @@ MonoBehaviour:
   bossFour: {fileID: 21300000, guid: 6e1dd45d9888a294b898d0c3071dc4e7, type: 3}
   levelFive: {fileID: 21300000, guid: 9c009ec2c5e778b4e9b404cda11984b2, type: 3}
   bossFive: {fileID: 21300000, guid: b88b29d8766801a4b9abe68ff31599a3, type: 3}
+  levelSix: {fileID: 21300000, guid: 6a48807f72f7a4740b37c231d0a5a050, type: 3}
   backGround: {fileID: 2127421995}
   levelManager: {fileID: 520291491}
   level: 0

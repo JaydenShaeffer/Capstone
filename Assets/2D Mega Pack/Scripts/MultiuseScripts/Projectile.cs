@@ -7,6 +7,8 @@ public class Projectile : MonoBehaviour
    // public Sprite originalSprite;
   //  public Sprite poweredUpSprite;
     public static int damage = 25;
+    public static int powerDamage = 50;
+    public static int defaultDMG = 25;
     public float moveSpeed = 5.0f; // Adjust the speed as needed
     public GameObject projectile;
     Rigidbody2D rb;
@@ -55,6 +57,7 @@ public class Projectile : MonoBehaviour
         projectile = GameObject.FindWithTag("EnemyProjectile");
         Enemy enemy = collision.GetComponent<Enemy>();
         BossHealthbar bossHP = collision.GetComponent<BossHealthbar>();
+        MultiBossHealthBarHealthBar multibossHP = collision.GetComponent<MultiBossHealthBarHealthBar>();
         if (enemy != null)
         {
             enemy.TakeDamage(damage);
@@ -65,6 +68,12 @@ public class Projectile : MonoBehaviour
         else if (bossHP != null)
         {
             bossHP.TakeDamage(damage);
+            Debug.Log($"Enemy hit for {damage}");
+            Destroy(gameObject); // Destroy the projectile on collision
+        }
+        else if (multibossHP != null)
+        {
+            multibossHP.TakeDamage(damage);
             Debug.Log($"Enemy hit for {damage}");
             Destroy(gameObject); // Destroy the projectile on collision
         }
