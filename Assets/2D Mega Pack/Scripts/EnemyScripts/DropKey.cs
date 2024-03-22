@@ -17,6 +17,7 @@ public class DropKey : MonoBehaviour
     {
         if (keyPrefab != null)
         {
+            Debug.Log("KEY DROPPED");
             Instantiate(keyPrefab, transform.position, Quaternion.identity);
             // Optionally, you can add more logic related to dropping the key here
         }

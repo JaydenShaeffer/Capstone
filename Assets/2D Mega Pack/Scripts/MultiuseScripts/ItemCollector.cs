@@ -39,7 +39,7 @@ public class ItemCollector : MonoBehaviour
 
     void Update()
     {
-        if (score >= 1800)
+        if (score >= 1900)
         {
             LevelManager.secretStuck = true;
             secret = true;

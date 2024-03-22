@@ -2800,9 +2800,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 900
+  m_MaxValue: 700
   m_WholeNumbers: 0
-  m_Value: 900
+  m_Value: 700
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -15020,7 +15020,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8020011973958056623, guid: d7c580c97bfb91144bd34b524ad94f1d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15276,7 +15276,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8020011973958056623, guid: d7c580c97bfb91144bd34b524ad94f1d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -21042,8 +21042,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 8042989778812728716}
   parent: {fileID: 1830754565}
-  maxHealth: 450
-  currentHealth: 450
+  maxHealth: 350
+  currentHealth: 350
   healthBar: {fileID: 462728437}
   multibossHealthBar: {fileID: 343666944}
   spawnSound: {fileID: 8300000, guid: 4b2bd899c0a56c54d920e0ad1bfc637e, type: 3}
@@ -21067,8 +21067,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 8747804382992600539}
   parent: {fileID: 1873546742}
-  maxHealth: 450
-  currentHealth: 450
+  maxHealth: 350
+  currentHealth: 350
   healthBar: {fileID: 113860141}
   multibossHealthBar: {fileID: 343666944}
   spawnSound: {fileID: 8300000, guid: 56184b06cef5ec941923e1ecefc7a59e, type: 3}

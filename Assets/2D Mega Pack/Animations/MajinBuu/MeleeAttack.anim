@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Idle
+  m_Name: MeleeAttack
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,27 +21,19 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 1556980190, guid: 414046d2b48e4e845ae6953b0b572969, type: 3}
-    - time: 0.2
-      value: {fileID: -888660282, guid: 414046d2b48e4e845ae6953b0b572969, type: 3}
-    - time: 0.4
-      value: {fileID: -760985535, guid: 414046d2b48e4e845ae6953b0b572969, type: 3}
-    - time: 0.6
-      value: {fileID: 765973651, guid: 414046d2b48e4e845ae6953b0b572969, type: 3}
-    - time: 0.8
-      value: {fileID: -272409364, guid: 414046d2b48e4e845ae6953b0b572969, type: 3}
+      value: {fileID: 1865307330, guid: 633817d0061253d4c89baee8d79967ea, type: 3}
+    - time: 0.33333334
+      value: {fileID: -784338062, guid: 633817d0061253d4c89baee8d79967ea, type: 3}
+    - time: 0.6666667
+      value: {fileID: -1803475851, guid: 633817d0061253d4c89baee8d79967ea, type: 3}
     - time: 1
-      value: {fileID: -1302926990, guid: 414046d2b48e4e845ae6953b0b572969, type: 3}
-    - time: 1.2
-      value: {fileID: -1214777871, guid: 414046d2b48e4e845ae6953b0b572969, type: 3}
-    - time: 1.4
-      value: {fileID: 836937615, guid: 414046d2b48e4e845ae6953b0b572969, type: 3}
+      value: {fileID: 481479099, guid: 633817d0061253d4c89baee8d79967ea, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
     flags: 2
-  m_SampleRate: 5
+  m_SampleRate: 3
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -58,20 +50,16 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 1556980190, guid: 414046d2b48e4e845ae6953b0b572969, type: 3}
-    - {fileID: -888660282, guid: 414046d2b48e4e845ae6953b0b572969, type: 3}
-    - {fileID: -760985535, guid: 414046d2b48e4e845ae6953b0b572969, type: 3}
-    - {fileID: 765973651, guid: 414046d2b48e4e845ae6953b0b572969, type: 3}
-    - {fileID: -272409364, guid: 414046d2b48e4e845ae6953b0b572969, type: 3}
-    - {fileID: -1302926990, guid: 414046d2b48e4e845ae6953b0b572969, type: 3}
-    - {fileID: -1214777871, guid: 414046d2b48e4e845ae6953b0b572969, type: 3}
-    - {fileID: 836937615, guid: 414046d2b48e4e845ae6953b0b572969, type: 3}
+    - {fileID: 1865307330, guid: 633817d0061253d4c89baee8d79967ea, type: 3}
+    - {fileID: -784338062, guid: 633817d0061253d4c89baee8d79967ea, type: 3}
+    - {fileID: -1803475851, guid: 633817d0061253d4c89baee8d79967ea, type: 3}
+    - {fileID: 481479099, guid: 633817d0061253d4c89baee8d79967ea, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.6
+    m_StopTime: 1.3333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -92,7 +80,14 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0
-    functionName: ActivateHealthBar
+    functionName: MeleeSound
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1
+    functionName: DamagePlayer
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
