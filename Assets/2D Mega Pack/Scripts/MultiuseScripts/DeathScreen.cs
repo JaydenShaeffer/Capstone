@@ -17,6 +17,7 @@ public class DeathScreen : MonoBehaviour
         // Reset the currentLevelIndex before loading the main menu scene
        // LevelManager.instance.ResetLevelIndex();
         ItemCollector.isPoweredUp = false;
+        GojoScript.domainExpansion = false;
         Projectile.damage = Projectile.defaultDMG;
         LevelManager.currentLevelIndex = LevelManager.currentLevelIndex - 1;
         LoadingImageChanger.levelCount = LoadingImageChanger.levelCount - 1;
