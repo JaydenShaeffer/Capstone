@@ -220,7 +220,7 @@ TextureImporter:
         width: 220
         height: 76
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,6 +228,27 @@ TextureImporter:
       bones: []
       spriteID: 23ed9c842fc7f164998780b2b681407c
       internalID: 1544499558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BeerusProjectile
+      rect:
+        serializedVersion: 2
+        x: 2591
+        y: 1537
+        width: 122
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a78751e94bf01f46a44d59ac27030b5
+      internalID: 898805649
       vertices: []
       indices: 
       edges: []
@@ -243,6 +264,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      BeerusProjectile: 898805649
       BuffedRa: -84646484
       FriezaSpiritBomb: -2049747179
       GokuBlackProjectile: 1544499558

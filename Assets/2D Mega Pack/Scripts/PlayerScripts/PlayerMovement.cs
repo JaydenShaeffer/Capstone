@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] private float groundCheckInterval = 5f;
+
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
     private Animator anim;
@@ -96,6 +98,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        StartCoroutine(CheckGroundCollisionPeriodically());
+
         StartCoroutine(EnableMovementAfterDelay());
         sprite = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
@@ -133,7 +137,40 @@ public class PlayerMovement : MonoBehaviour
            
         }
     }
+    private IEnumerator CheckGroundCollisionPeriodically()
+    {
+        while (true)
+        {
+            //if (isJumping && IsJumping)
+            //{
+                 yield return new WaitForSeconds(groundCheckInterval);
 
+                if (!IsTouchingGround())
+                {
+                    // Player is not touching the ground, handle accordingly
+                Debug.Log("Player is not touching the ground!");
+                }
+            //}
+           
+        }
+    }
+    private bool IsTouchingGround()
+    {
+        // Perform a physics check to see if the player is touching the ground
+        // You can adjust the size of the overlap circle as needed
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 0.1f); // Adjust the radius as needed
+        foreach (Collider2D collider in colliders)
+        {
+            if (collider.CompareTag("Ground"))
+            {
+                return true; // Player is touching the ground
+            }
+        }
+        isJumping = false;
+        IsJumping = false;
+        return false; // Player is not touching the ground
+        
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
 

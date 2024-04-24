@@ -50,7 +50,7 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("HealthPack") || collision.CompareTag("Z") || collision.CompareTag("Door") || collision.CompareTag("Powerup"))
+        if (collision.CompareTag("HealthPack") || collision.CompareTag("Z") || collision.CompareTag("Door") || collision.CompareTag("Powerup") || collision.CompareTag("ShieldPowerup"))
         {
             return;
         }

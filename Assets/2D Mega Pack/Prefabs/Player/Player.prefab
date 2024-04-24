@@ -242,6 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1fb86f3e845c054dab34582792e1f8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundCheckInterval: 10
   jumpSound: {fileID: 8300000, guid: f23ca1dc6b6701147829205b6522f57a, type: 3}
   initialDelay: 1
   knockbackForce: 8

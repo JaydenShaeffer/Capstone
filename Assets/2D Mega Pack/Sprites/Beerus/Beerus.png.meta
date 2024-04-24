@@ -1,0 +1,1134 @@
+fileFormatVersion: 2
+guid: 57431242a2f6cf047b947c0af684e7b1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Idle0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 8180
+        width: 84
+        height: 156
+      alignment: 9
+      pivot: {x: 0.5, y: 0.525641}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1bdfedbc644c2b48b06da5867c61b3f
+      internalID: 1593543061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle1
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 8180
+        width: 93
+        height: 156
+      alignment: 9
+      pivot: {x: 0.50537634, y: 0.525641}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939b41e5e364fef4cabff457c77cb7ce
+      internalID: 303769579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle2
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 8180
+        width: 82
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02eaf4071ab6a6345ad4adc56d3e9056
+      internalID: 1600081374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle3
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 8180
+        width: 67
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ca02ce85bc6714b84d1ba713670dab
+      internalID: -244609596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle4
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 8180
+        width: 80
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab16c83a71fa11498e1bfc622dd5492
+      internalID: -1055901187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle5
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 8180
+        width: 93
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dfd7262d846b434fa398a4e4d815d2d
+      internalID: -1793701799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle6
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 8180
+        width: 98
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94fac6a77bd62e24e9af6ec1eb73f164
+      internalID: 1903394186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle7
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 8181
+        width: 98
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8181d0f5a693349968628a06cedbad
+      internalID: -1019589491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle8
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 8180
+        width: 88
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4e557dba37210498bd4524fa5bf0e4
+      internalID: -914297983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle9
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 8180
+        width: 86
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c64c00b4fbc5924e9d6420dea7c288c
+      internalID: 799296402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 7899
+        width: 69
+        height: 151
+      alignment: 9
+      pivot: {x: 0.5072464, y: 0.54304636}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f673d90a6c9e8b43b402f59fc2fa5fa
+      internalID: -1913634423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk1
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 7902
+        width: 83
+        height: 147
+      alignment: 9
+      pivot: {x: 0.51807225, y: 0.5578231}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 438c37365b9f5584c9dd8c85e25b12fd
+      internalID: 97347683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk2
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 7902
+        width: 87
+        height: 147
+      alignment: 9
+      pivot: {x: 0.5632184, y: 0.5578231}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2569cd5112a3b41a982020773c64a1
+      internalID: 2109315459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk3
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 7902
+        width: 91
+        height: 146
+      alignment: 9
+      pivot: {x: 0.64835167, y: 0.5479452}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408b9121b9301e84da70b21dbea6b736
+      internalID: -544626531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk4
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 7901
+        width: 78
+        height: 148
+      alignment: 9
+      pivot: {x: 0.6025641, y: 0.5405406}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6d45163fa6ea247ba2f0f2d96901de
+      internalID: -302425915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk5
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 7903
+        width: 68
+        height: 148
+      alignment: 9
+      pivot: {x: 0.5882353, y: 0.5472973}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815796a95ba96744ba57904e244a4a38
+      internalID: -2059006376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk6
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 7903
+        width: 79
+        height: 148
+      alignment: 9
+      pivot: {x: 0.6202532, y: 0.5405406}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681e5fdb8a7780a439e4d0540d9ce3a9
+      internalID: -971659831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk7
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 7901
+        width: 89
+        height: 147
+      alignment: 9
+      pivot: {x: 0.61797756, y: 0.5442177}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad55360b6cfe9224c9e6264e8101c7bf
+      internalID: -1384523168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walk8
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 7898
+        width: 85
+        height: 151
+      alignment: 9
+      pivot: {x: 0.5882353, y: 0.54966885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecab1a5665a1cfc42afba987ab00811e
+      internalID: -1118382432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blast0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 4314
+        width: 65
+        height: 155
+      alignment: 9
+      pivot: {x: 0.50769234, y: 0.5225806}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 094143c9d0d7eee4b842eb4bc7e39dbd
+      internalID: -1899224970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blast1
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 4315
+        width: 76
+        height: 153
+      alignment: 9
+      pivot: {x: 0.5394737, y: 0.52287585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a276cb3c48c66749bba6fbcf8749a76
+      internalID: -1489173691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blast2
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 4315
+        width: 66
+        height: 153
+      alignment: 9
+      pivot: {x: 0.43939394, y: 0.52287585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f197ff2e4912c394b978c0169d0049b1
+      internalID: -344050919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blast3
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 4315
+        width: 99
+        height: 153
+      alignment: 9
+      pivot: {x: 0.56565654, y: 0.52287585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47f9b01c69650b4ba4c67698270cec9
+      internalID: -1807374016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blast4
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 4315
+        width: 103
+        height: 153
+      alignment: 9
+      pivot: {x: 0.5533981, y: 0.52287585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d725aa31f87f7cf4aaedae33af2ce0f3
+      internalID: -1250975842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blast5
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 4315
+        width: 99
+        height: 153
+      alignment: 9
+      pivot: {x: 0.56565654, y: 0.52287585}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b9e80718f242a4a96081059838421e
+      internalID: 7984531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blast6
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 4314
+        width: 93
+        height: 155
+      alignment: 9
+      pivot: {x: 0.58064514, y: 0.5225806}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e2d387dcd6ab04caa8fc28d113aa61
+      internalID: 733347870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1583
+        width: 74
+        height: 130
+      alignment: 9
+      pivot: {x: 0.5, y: 0.63076925}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87d3b33af7818c449be96ba523a23150
+      internalID: -1080911576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1585
+        width: 89
+        height: 113
+      alignment: 9
+      pivot: {x: 0.46067417, y: 0.71681416}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a660dbe9c3a2b940adb4a7c28b0ca25
+      internalID: -1925883895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1478
+        width: 100
+        height: 99
+      alignment: 9
+      pivot: {x: 0.5, y: 0.8181818}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b876e88ee9dd3ac4dadec5ef0542ab5d
+      internalID: -1765801888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead3
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 1478
+        width: 129
+        height: 89
+      alignment: 9
+      pivot: {x: 0.5426357, y: 0.92134833}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171525ef3b7c30046969e47cfee617d6
+      internalID: 1137655759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead4
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 1478
+        width: 138
+        height: 75
+      alignment: 9
+      pivot: {x: 0.6014493, y: 1.1066667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1894222d657382499b30c03380faf70
+      internalID: 578553341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead5
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 1478
+        width: 140
+        height: 69
+      alignment: 9
+      pivot: {x: 0.60714287, y: 1.1884059}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 217ae53f96f8a004bb6dd297c9973493
+      internalID: -318208400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead6
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1392
+        width: 137
+        height: 81
+      alignment: 9
+      pivot: {x: 0.5839416, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc143c78686fa44ca8f153221d6ccfc
+      internalID: -227494781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead7
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1392
+        width: 138
+        height: 65
+      alignment: 9
+      pivot: {x: 0.59420294, y: 1.2461538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c8baf6f54ebc549a7758a09b492549
+      internalID: 169295118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead8
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1303
+        width: 133
+        height: 84
+      alignment: 9
+      pivot: {x: 0.66917294, y: 0.9761905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3612d7304bd5e36429580999f6546b35
+      internalID: -1600964562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead9
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 1304
+        width: 134
+        height: 58
+      alignment: 9
+      pivot: {x: 0.70149255, y: 1.4137931}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9213107dc624de94ca36d6d46fdea2ae
+      internalID: -1850503549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead10
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1197
+        width: 111
+        height: 99
+      alignment: 9
+      pivot: {x: 0.5135135, y: 0.82828283}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e3f83ff010ddb43aa433b7cdc5f55b
+      internalID: -909719947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead11
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1233
+        width: 141
+        height: 64
+      alignment: 9
+      pivot: {x: 0.52482265, y: 1.3125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49acc6ee5e188e841a26d8f121f604b5
+      internalID: -169867954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead12
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 800
+        width: 154
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 1.9047619}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d099a414745397146af06aead8c3bfa0
+      internalID: -1239096323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Punch0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 5964
+        width: 113
+        height: 91
+      alignment: 9
+      pivot: {x: 0.50442475, y: 0.8681319}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155502143a1d0b94dbe73b973dd504d8
+      internalID: -53427060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Punch1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 5966
+        width: 149
+        height: 102
+      alignment: 9
+      pivot: {x: 0.7583893, y: 0.7941177}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebd4b414367d91e4693e39872fbb5448
+      internalID: 307977817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Punch2
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 5966
+        width: 150
+        height: 103
+      alignment: 9
+      pivot: {x: 0.7266667, y: 0.78640777}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8769502886d4f8c428fa1fc57befb134
+      internalID: 1763955773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Punch3
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 5965
+        width: 119
+        height: 112
+      alignment: 9
+      pivot: {x: 0.80672276, y: 0.73214287}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea8836dd95e16d48bc4f19a40b88d67
+      internalID: -110172308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Punch4
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 5963
+        width: 84
+        height: 109
+      alignment: 9
+      pivot: {x: 0.70238096, y: 0.7614679}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de85a9fb02dc3d949b51619bdde1a4cd
+      internalID: -1071530655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Blast0: -1899224970
+      Blast1: -1489173691
+      Blast2: -344050919
+      Blast3: -1807374016
+      Blast4: -1250975842
+      Blast5: 7984531
+      Blast6: 733347870
+      Dead0: -1080911576
+      Dead1: -1925883895
+      Dead10: -909719947
+      Dead11: -169867954
+      Dead12: -1239096323
+      Dead2: -1765801888
+      Dead3: 1137655759
+      Dead4: 578553341
+      Dead5: -318208400
+      Dead6: -227494781
+      Dead7: 169295118
+      Dead8: -1600964562
+      Dead9: -1850503549
+      Idle0: 1593543061
+      Idle1: 303769579
+      Idle2: 1600081374
+      Idle3: -244609596
+      Idle4: -1055901187
+      Idle5: -1793701799
+      Idle6: 1903394186
+      Idle7: -1019589491
+      Idle8: -914297983
+      Idle9: 799296402
+      Punch0: -53427060
+      Punch1: 307977817
+      Punch2: 1763955773
+      Punch3: -110172308
+      Punch4: -1071530655
+      Walk0: -1913634423
+      Walk1: 97347683
+      Walk2: 2109315459
+      Walk3: -544626531
+      Walk4: -302425915
+      Walk5: -2059006376
+      Walk6: -971659831
+      Walk7: -1384523168
+      Walk8: -1118382432
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
