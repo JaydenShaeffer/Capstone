@@ -68,4 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/7th Level.unity
     guid: 6a26aa53a8532984589030dba9ee966f
+  - enabled: 1
+    path: Assets/Scenes/Bossroom7.unity
+    guid: 824b3a66b13992b45b72b5a43d5bdddc
   m_configObjects: {}

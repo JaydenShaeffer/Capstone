@@ -25,7 +25,7 @@ public class LevelManager : MonoBehaviour
 
     public string GetNextLevel()
     {
-        if(ItemCollector.score <= 2000 && secretStuck == false)
+        if(ItemCollector.score <= 2100 && secretStuck == false)
         {
             if (currentLevelIndex < levelNames.Length)
             {

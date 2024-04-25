@@ -64,6 +64,11 @@ public class BossRanged : MonoBehaviour
         SoundManager.instance.PlaySound(attackSound);
     }
 
+    private void BeerusAttackAudio()
+    {
+        SoundManager.instance.PlaySound(attackSound,adjustedVolume);
+    }
+
     private void RangedAttack()
     {
         cooldownTimer = 0;
