@@ -241,7 +241,7 @@ TextureImporter:
         width: 122
         height: 122
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,6 +249,27 @@ TextureImporter:
       bones: []
       spriteID: 2a78751e94bf01f46a44d59ac27030b5
       internalID: 898805649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BrolyProjectile
+      rect:
+        serializedVersion: 2
+        x: 3583
+        y: 1537
+        width: 123
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f158324a538533e44aa791a6041df7d7
+      internalID: 1388507778
       vertices: []
       indices: 
       edges: []
@@ -265,6 +286,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       BeerusProjectile: 898805649
+      BrolyProjectile: 1388507778
       BuffedRa: -84646484
       FriezaSpiritBomb: -2049747179
       GokuBlackProjectile: 1544499558

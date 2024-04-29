@@ -446,6 +446,8 @@ MonoBehaviour:
   - Bossroom6
   - 7th Level
   - Bossroom7
+  - 8th Level
+  - Bossroom8
   itemCollector: {fileID: 1812407348}
 --- !u!4 &520291492
 Transform:
@@ -1338,6 +1340,8 @@ MonoBehaviour:
   bossSix: {fileID: 21300000, guid: 81be1fd1351a62e42a4b5533cf5ad5ba, type: 3}
   levelSeven: {fileID: 21300000, guid: 6f67d9d07cc454042b753935fbfd6f97, type: 3}
   bossSeven: {fileID: 21300000, guid: f908d3fa8f7477346816286dfa6e1046, type: 3}
+  levelEight: {fileID: 21300000, guid: 54cb277d13fba1546a901fc4fee20a93, type: 3}
+  bossEight: {fileID: 21300000, guid: 291f37346fdba214babda20a5a83476f, type: 3}
   backGround: {fileID: 2127421995}
   levelManager: {fileID: 520291491}
   level: 0

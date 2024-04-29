@@ -14905,7 +14905,7 @@ PrefabInstance:
       objectReference: {fileID: 1618884906}
     - target: {fileID: 6210601622173931311, guid: 265d24bf8fdf9eb44b11de3456f1524e, type: 3}
       propertyPath: nextLevelName
-      value: WinScreen
+      value: LoadingScreen
       objectReference: {fileID: 0}
     - target: {fileID: 6210601622173931311, guid: 265d24bf8fdf9eb44b11de3456f1524e, type: 3}
       propertyPath: secretLevelName
