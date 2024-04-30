@@ -233,7 +233,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BeerusProjectile
+      name: yellowkibLAST
       rect:
         serializedVersion: 2
         x: 2591
@@ -262,7 +262,7 @@ TextureImporter:
         width: 123
         height: 122
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -285,12 +285,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BeerusProjectile: 898805649
       BrolyProjectile: 1388507778
       BuffedRa: -84646484
       FriezaSpiritBomb: -2049747179
       GokuBlackProjectile: 1544499558
       GokuProjectile0: 897624079
+      Projectiles (Dragon Ball)_0: -1807389924
+      yellowkibLAST: 898805649
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
