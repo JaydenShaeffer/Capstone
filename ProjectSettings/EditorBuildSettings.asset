@@ -77,4 +77,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bossroom8.unity
     guid: 5e287fef94d58704cb653a32be92aeca
+  - enabled: 1
+    path: Assets/Scenes/SecretWinScreen.unity
+    guid: 0621591463d99d84ca9b0d9bace52719
+  - enabled: 1
+    path: Assets/Scenes/SecretDeathScreen.unity
+    guid: 2aa765e988821af4393aaeb3395ea506
+  - enabled: 1
+    path: Assets/Scenes/9th Level.unity
+    guid: 5596a64fde78d0b44a49e0884683e68f
+  - enabled: 1
+    path: Assets/Scenes/Bossroom9.unity
+    guid: 62ab35ae4582f1742a3561037ac95cc9
   m_configObjects: {}

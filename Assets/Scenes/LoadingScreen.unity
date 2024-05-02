@@ -448,6 +448,7 @@ MonoBehaviour:
   - Bossroom7
   - 8th Level
   - Bossroom8
+  - 9th Level
   itemCollector: {fileID: 1812407348}
 --- !u!4 &520291492
 Transform:
@@ -1221,6 +1222,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8726667451632958465, guid: 265d24bf8fdf9eb44b11de3456f1524e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1342,6 +1347,7 @@ MonoBehaviour:
   bossSeven: {fileID: 21300000, guid: f908d3fa8f7477346816286dfa6e1046, type: 3}
   levelEight: {fileID: 21300000, guid: 54cb277d13fba1546a901fc4fee20a93, type: 3}
   bossEight: {fileID: 21300000, guid: 291f37346fdba214babda20a5a83476f, type: 3}
+  levelNine: {fileID: 21300000, guid: 4960d7c410498fb4ebb70420d616c049, type: 3}
   backGround: {fileID: 2127421995}
   levelManager: {fileID: 520291491}
   level: 0

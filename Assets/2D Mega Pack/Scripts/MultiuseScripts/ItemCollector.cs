@@ -14,9 +14,10 @@ public class ItemCollector : MonoBehaviour
     public string nextLevelName;
     public bool secret = false;
     public string secretLevelName;
+    public int saveScore;
 
     [Header("Z Sound")]
-    [SerializeField] private AudioClip zSound;
+    [SerializeField] public AudioClip zSound;
 // TEST [SerializeField] private AudioClip poweredUpAttackSound;
    
 
@@ -29,7 +30,7 @@ public class ItemCollector : MonoBehaviour
 
     [SerializeField] public static int score;
 
-    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] public TextMeshProUGUI scoreText;
 
     void Start()
     {
@@ -39,7 +40,7 @@ public class ItemCollector : MonoBehaviour
 
     void Update()
     {
-        if (score >= 2500)
+        if (score >= 3600)
         {
             LevelManager.secretStuck = true;
             secret = true;
@@ -79,9 +80,12 @@ public class ItemCollector : MonoBehaviour
         if (collision.gameObject.CompareTag("Z"))
         {
             SoundManager.instance.PlaySound(zSound);
-            Destroy(collision.gameObject);
+             Destroy(collision.gameObject);
+            //collision.gameObject.SetActive(false);
+           
             score += 100;
             scoreText.text = "Score: " + score;
+           
         }
     }
 
@@ -98,11 +102,12 @@ public class ItemCollector : MonoBehaviour
             playerAnimator.SetTrigger("End");
             SoundManager.instance.PlaySound(tpSound);
             PlayerHP.shield = false;
-            
+            PlayerPrefs.SetInt("Score", score);
+            PlayerPrefs.Save();
 
             if (secret = true)
             {
-                if (score <= 2400 && LevelManager.secretStuck == false)
+                if (score <= 3500 && LevelManager.secretStuck == false)
                 {
                     Debug.Log("I am addicted - jeff");
                     // Invoke the LoadNextLevel function after the animation duration

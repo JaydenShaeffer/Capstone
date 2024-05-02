@@ -12,7 +12,9 @@ public class PlayerHP : MonoBehaviour
     public Enemy_behavior enemy_Behavior;
     public HealthBar healthBar;
     private PlayerMovement PlayerMovement;
-    public string deathScene;
+    public ItemCollector ItemCollector;
+    public string deathScene; 
+    public string SecretdeathScene;
     public bool injured = false;
     [Header("Death Sound")]
     [SerializeField] private AudioClip deathSound;
@@ -96,7 +98,16 @@ public class PlayerHP : MonoBehaviour
             PlayerMovement.enabled = false;
         }
         yield return new WaitForSeconds(waitDuration);
-        SceneManager.LoadScene(deathScene);
+        if(ItemCollector.secret == true)
+        {
+            SceneManager.LoadScene(SecretdeathScene);
+            Debug.Log("SecretDeathScreen");
+        }
+        if(ItemCollector.secret == false)
+        {
+            SceneManager.LoadScene(deathScene);
+            Debug.Log("Normal Death Screen");
+        }  
     }
 
     public void Heal(int amount)

@@ -246,7 +246,7 @@ MonoBehaviour:
   jumpSound: {fileID: 8300000, guid: f23ca1dc6b6701147829205b6522f57a, type: 3}
   initialDelay: 1
   knockbackForce: 8
-  runspeed: 8
+  runspeed: 25
   _IsFacingRight: 1
   jumpForce: 10
   _isJumping: 0
@@ -497,7 +497,9 @@ MonoBehaviour:
   currentHealth: 0
   enemy_Behavior: {fileID: 0}
   healthBar: {fileID: 0}
+  ItemCollector: {fileID: 6210601622173931311}
   deathScene: DeathScreen
+  SecretdeathScene: SecretDeathScreen
   injured: 0
   deathSound: {fileID: 8300000, guid: 52879833b21dcd94bbb6ed9934ec5101, type: 3}
   healSound: {fileID: 8300000, guid: 71b4ff1b36b792446a6a97efdb58e47f, type: 3}

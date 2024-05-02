@@ -7,7 +7,7 @@ public class LevelManager : MonoBehaviour
     public string[] levelNames; // Names of the levels in order
     public static int currentLevelIndex = 0;
     public ItemCollector itemCollector;
-    public static bool secretStuck = false;
+   [SerializeField] public static bool secretStuck = false;
 
     private void Awake()
     {
@@ -25,7 +25,7 @@ public class LevelManager : MonoBehaviour
 
     public string GetNextLevel()
     {
-        if(ItemCollector.score <= 2400 && secretStuck == false)
+        if(ItemCollector.score <= 3500 && secretStuck == false)
         {
             if (currentLevelIndex < levelNames.Length)
             {

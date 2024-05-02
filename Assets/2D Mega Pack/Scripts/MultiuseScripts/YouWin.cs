@@ -17,11 +17,17 @@ public class YouWin : MonoBehaviour
        // LevelManager.instance.ResetLevelIndex();
         ItemCollector.isPoweredUp = false;
         GojoScript.domainExpansion = false;
+        LevelManager.secretStuck = false;
         Projectile.damage = Projectile.defaultDMG;
         LevelManager.currentLevelIndex = LevelManager.currentLevelIndex = 0;
         LoadingImageChanger.levelCount = LoadingImageChanger.levelCount = 0;
+        SecretLevelManager.SecretcurrentLevelIndex = 0;
+        SecretLoadingImageChanger.levelCount = 0;
         // Load the MainMenu scene
-        Debug.Log(LevelManager.currentLevelIndex);
+        Debug.Log($"Level Manger Index: {LevelManager.currentLevelIndex}");
+        Debug.Log($"Loading image changer: {LoadingImageChanger.levelCount}");
+        Debug.Log($"Secret level manager index: {SecretLevelManager.SecretcurrentLevelIndex}");
+        Debug.Log($"Secret image changer: {SecretLoadingImageChanger.levelCount}");
         SceneManager.LoadScene("StartMenu");
     }
 
