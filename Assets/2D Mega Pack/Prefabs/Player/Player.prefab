@@ -246,7 +246,7 @@ MonoBehaviour:
   jumpSound: {fileID: 8300000, guid: f23ca1dc6b6701147829205b6522f57a, type: 3}
   initialDelay: 1
   knockbackForce: 8
-  runspeed: 25
+  runspeed: 8
   _IsFacingRight: 1
   jumpForce: 10
   _isJumping: 0
@@ -363,6 +363,7 @@ MonoBehaviour:
   nextLevelName: LoadingScreen
   secret: 0
   secretLevelName: SecretLoadingScreen
+  saveScore: 0
   zSound: {fileID: 8300000, guid: 6e2efcc2b967609488d1e7bca758a07a, type: 3}
   powerupSound: {fileID: 8300000, guid: 3dc2d29aae7673c4d94f803cb3e56330, type: 3}
   shieldSound: {fileID: 8300000, guid: 2fd97193875a0f643be2147566d65785, type: 3}

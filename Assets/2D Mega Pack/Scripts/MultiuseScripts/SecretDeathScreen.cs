@@ -31,6 +31,8 @@ public class SecretDeathScreen : MonoBehaviour
         }*/
         //if (ItemCollector.secret == true && LevelManager.secretStuck == true)
         {
+            SecretLevelManager.SecretcurrentLevelIndex = SecretLevelManager.SecretcurrentLevelIndex - 1;
+            SecretLoadingImageChanger.levelCount = SecretLoadingImageChanger.levelCount - 1;
             SceneManager.LoadScene(SecretLevelScene);
             ItemCollector.isPoweredUp = false;
             Projectile.damage = Projectile.defaultDMG;

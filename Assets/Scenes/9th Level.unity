@@ -194,6 +194,72 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 651445721894144921, guid: 16d8dfcf9eb908547a356736f2967f0c, type: 3}
   m_PrefabInstance: {fileID: 20416556}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &50341193
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1960702704}
+    m_Modifications:
+    - target: {fileID: 2613214595650244248, guid: 3669a962df01fb7489f6ce72267dd15a, type: 3}
+      propertyPath: m_Name
+      value: Z (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847120471179332701, guid: 3669a962df01fb7489f6ce72267dd15a, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847120471179332701, guid: 3669a962df01fb7489f6ce72267dd15a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847120471179332701, guid: 3669a962df01fb7489f6ce72267dd15a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 25.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847120471179332701, guid: 3669a962df01fb7489f6ce72267dd15a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.6904465
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847120471179332701, guid: 3669a962df01fb7489f6ce72267dd15a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847120471179332701, guid: 3669a962df01fb7489f6ce72267dd15a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847120471179332701, guid: 3669a962df01fb7489f6ce72267dd15a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847120471179332701, guid: 3669a962df01fb7489f6ce72267dd15a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847120471179332701, guid: 3669a962df01fb7489f6ce72267dd15a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847120471179332701, guid: 3669a962df01fb7489f6ce72267dd15a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847120471179332701, guid: 3669a962df01fb7489f6ce72267dd15a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3669a962df01fb7489f6ce72267dd15a, type: 3}
+--- !u!4 &50341194 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5847120471179332701, guid: 3669a962df01fb7489f6ce72267dd15a, type: 3}
+  m_PrefabInstance: {fileID: 50341193}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &69181773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1603,7 +1669,7 @@ PrefabInstance:
       objectReference: {fileID: 1274404868}
     - target: {fileID: 6210601622173931311, guid: 265d24bf8fdf9eb44b11de3456f1524e, type: 3}
       propertyPath: nextLevelName
-      value: LoadingScreen
+      value: WinScreen
       objectReference: {fileID: 0}
     - target: {fileID: 8140523705172396646, guid: 265d24bf8fdf9eb44b11de3456f1524e, type: 3}
       propertyPath: healthBar
@@ -5391,7 +5457,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2056922974513287487, guid: d7c580c97bfb91144bd34b524ad94f1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.35
+      value: -2.36
       objectReference: {fileID: 0}
     - target: {fileID: 8020011973958056623, guid: d7c580c97bfb91144bd34b524ad94f1d, type: 3}
       propertyPath: m_Name
@@ -6445,7 +6511,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: dd88e45f59edabd49a74b33cec0f0eca, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 815741b9ab00cae4a8b5109910a5b9f3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -15543,6 +15609,7 @@ Transform:
   - {fileID: 581867874}
   - {fileID: 212324938}
   - {fileID: 1036429566}
+  - {fileID: 50341194}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

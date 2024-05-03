@@ -6,7 +6,7 @@ public class Projectile : MonoBehaviour
 {
    // public Sprite originalSprite;
   //  public Sprite poweredUpSprite;
-    public static int damage = 1000;
+    public static int damage = 25;
     public static int powerDamage = 50;
     public static int defaultDMG = 25;
     public float moveSpeed = 5.0f; // Adjust the speed as needed

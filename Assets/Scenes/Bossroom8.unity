@@ -14699,7 +14699,7 @@ PrefabInstance:
       objectReference: {fileID: 1618884906}
     - target: {fileID: 6210601622173931311, guid: 265d24bf8fdf9eb44b11de3456f1524e, type: 3}
       propertyPath: nextLevelName
-      value: WinScreen
+      value: LoadingScreen
       objectReference: {fileID: 0}
     - target: {fileID: 6210601622173931311, guid: 265d24bf8fdf9eb44b11de3456f1524e, type: 3}
       propertyPath: secretLevelName
@@ -15807,7 +15807,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 09915214348c9c645bc75ad7cf42dfc6, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 950bd9ade58a78e429d01e230ed9087d, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

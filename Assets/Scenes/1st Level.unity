@@ -690,7 +690,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 222359961}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 1.073, z: -10}
+  m_LocalPosition: {x: 2.75, y: 1.073, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1699,7 +1699,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2925824543300483590, guid: 265d24bf8fdf9eb44b11de3456f1524e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3
+      value: 2.75
       objectReference: {fileID: 0}
     - target: {fileID: 2925824543300483590, guid: 265d24bf8fdf9eb44b11de3456f1524e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8086,11 +8086,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3669a962df01fb7489f6ce72267dd15a, type: 3}
---- !u!1 &977883690 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2613214595650244248, guid: 3669a962df01fb7489f6ce72267dd15a, type: 3}
-  m_PrefabInstance: {fileID: 977883689}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &995090355
 GameObject:
   m_ObjectHideFlags: 0
@@ -50191,12 +50186,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f84e3a23207dbd4a8afd6648b9e8fd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectzBlocks:
-  - zBlock:
-    - collected: 0
-      zBlocksFrThisTime: {fileID: 3439533344046295071}
-    - collected: 0
-      zBlocksFrThisTime: {fileID: 977883690}
 --- !u!4 &1217873208
 Transform:
   m_ObjectHideFlags: 0
@@ -54278,11 +54267,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3669a962df01fb7489f6ce72267dd15a, type: 3}
---- !u!1 &3439533344046295071 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2613214595650244248, guid: 3669a962df01fb7489f6ce72267dd15a, type: 3}
-  m_PrefabInstance: {fileID: 3439533344046295070}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3515364049405168550 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3408868255863047809, guid: fe2962f4613e4fa4aa334fb2e3d3ad62, type: 3}
@@ -54598,7 +54582,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4058814064090849876}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 1.073, z: -10}
+  m_LocalPosition: {x: 2.75, y: 1.073, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
