@@ -265,11 +265,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundAudios:
-  - {fileID: 8300000, guid: 414f4ffe774a3d64f8ab0cdcc4420dd6, type: 3}
+  - {fileID: 8300000, guid: a50c2d933eaf50a4da1aea1a275570a7, type: 3}
   - {fileID: 8300000, guid: 0382aff41c2bc2a43bec68e3e121f000, type: 3}
   adjustedVolune: 2
   notadjustedVolume: 1
-  specificAudioClip: {fileID: 8300000, guid: 414f4ffe774a3d64f8ab0cdcc4420dd6, type: 3}
+  specificAudioClip: {fileID: 8300000, guid: a50c2d933eaf50a4da1aea1a275570a7, type: 3}
 --- !u!1 &75499476
 GameObject:
   m_ObjectHideFlags: 0
